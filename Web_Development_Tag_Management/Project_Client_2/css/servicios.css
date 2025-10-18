@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "Futura T OT";
+    src: url("../font/Futura-T-OT-Book_19064.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "One Fell Swoop";
+    src: url("../font/ONEFS.TTF") format("truetype");
+}
+
+
+h1, h2{
+font-family:"One Fell Swoop";
+}
+
+h1{
+font-size:2em;
+}
+
+h2{
+font-size:1.7em;
+}
+
+a{
+	color: black;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+   }   
+
+p{
+	display: inline-block;
+}
+
+body{
+	width: 1000px;
+	margin: 0 auto;
+	letter-spacing:1px;
+}
+
+header{
+	background-color:;
+	height: 100px;
+	
+}
+
+div{
+
+  display: inline-block;
+}
+
+#logo{
+	height: 90px;
+	width: 225px;
+	margin-top: 10px;
+}
+
+#menu{
+    font-family: "Futura T OT";
+	display: inline-block;
+	color: black;
+	background-color: ;
+    border-bottom: solid:;
+	float: right;
+	margin-top: 80px;
+	list-style-type: circle;
+	
+}
+
+#menu li{
+	list-style-type: circle;
+	display: inline-block;
+	margin-right: 1.5em;
+	padding:0;
+}
+
+
+
+#container{
+        widht:100%;
+        margin-top: 4em;
+	height: 500px;
+	font-family: "Futura T OT";
+	background-color:;
+}
+
+#container h1{
+margin-bottom:2em;
+}
+
+#containerSon{
+width:100%;
+}
+
+#eventos li{
+
+}
+
+#empresariales{
+width:30%;
+display: inline-block;
+float:left;
+background-color:;
+}
+
+#sociales{
+width:25%;
+display: inline-block;
+background-color:;
+float:left;
+margin-left: 9%;
+margin-right: 9%;
+}
+
+#alimentos{
+width:27%;
+background-color:;
+display: inline-block;
+float:right;
+margin-bottom:4em;
+}
+
+#servicios{
+width:50%;
+background-color:;
+}
+
+#servicios2{
+display: inline-block;
+width:49%;
+}
+
+
+footer{
+	width: 100%;
+	background-color: ;
+	margin-top:3em;
+	font-family: "Futura T OT";
+	font-size: .8em;
+	border-top:1px inset #efefef;
+	margin-bottom:1em;
+}
+
+#menuDos{
+	margin-top: 2em;
+    font-family: "Futura T OT";
+	display: inline-block;
+	color: black;
+	background-color:;
+}
+
+#menuDos li{
+	list-style-type: circle;
+	display: inline-block;
+	margin-right: 1.5em;
+	padding:0;
+}
+
+
+footer p{
+	display: inline-block;
+}
+
+#socialContainer{
+   float: right;
+   display: inline-block;
+}
+
+#facebook{
+  width: 25px;
+}
+
+#twitter{
+   width: 25px;
+   margin-left: .5em;
+}

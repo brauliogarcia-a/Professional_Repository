@@ -1,0 +1,300 @@
+@font-face {
+    font-family: "Futura T OT";
+    src: url("../font/Futura-T-OT-Book_19064.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "One Fell Swoop";
+    src: url("../font/ONEFS.TTF") format("truetype");
+}
+
+
+a{
+	color: black;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+   
+}   
+
+
+body{
+	width: 1000px;
+	margin: 0 auto;
+	letter-spacing:1px;
+}
+
+header{
+	background-color:;
+	height: 100px;
+	
+}
+
+div{
+
+  display: inline-block;
+}
+
+#logo{
+	height: 90px;
+	width: 225px;
+	margin-top: 10px;
+}
+
+#menu{
+    font-family: "Futura T OT";
+	display: inline-block;
+	color: black;
+	background-color: ;
+    border-bottom: solid:;
+	float: right;
+	margin-top: 80px;
+	list-style-type: circle;
+	
+}
+
+#menu li{
+	list-style-type: circle;
+	display: inline-block;
+	margin-right: 1.5em;
+	padding:0;
+}
+
+#banner{
+margin-top:2em;
+width:1000px;
+overflow:hidden;
+}
+
+#textoBanner{
+	position: absolute;
+	width: 300px;
+	background: rgba(133, 122, 175, .6);
+	text-align: center;
+	margin-left: 697px;
+	margin-top: 253px;
+	font-family: "One Fell Swoop";
+	font-size: 2em;
+	color: white;
+}
+
+#slider{
+width:6000px;
+}
+
+.slide {
+  float: left;
+  width: 1000px;
+  height: 400px;
+  display:inline-block;
+}
+
+
+span{
+	font-family: "One Fell Swoop";
+	font-size: 1.5em;
+	display: inline-block;
+}
+
+#texto1{
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  letter-spacing:;
+  line-height:2em;
+  font-family: "Futura T OT";
+}
+
+#seccionDos{
+	width: 100%;
+	height: 450px;
+	background-color:;
+    margin-top: 4em;
+    font-family: "Futura T OT";
+    
+}
+
+
+#WrapperUno{
+	width: 300px;
+	height: 450px;
+	background-color: ;
+    font-family: "Futura T OT";
+    display: inline-block;
+    float: left;
+}
+
+
+#textoUno{
+	position: absolute;
+	width: 300px;
+	height: 80px;
+	background: rgba(130, 130, 130, .3);
+	text-align:center;
+	margin-top:370px;
+	font-family: "One Fell Swoop";
+	font-size: 1.5em;
+	color: white;
+	display: inline-block;
+}
+
+#textoUno p{
+margin-top:;
+}
+
+#WrapperDos{
+	display: inline-block;
+	margin-left: 3em;
+	float: left;
+	width: 300px;
+	height: 450px;
+	background-color:;
+}
+
+#textoDos{
+	position: absolute;
+	width: 300px;
+	height: 80px;
+	background: rgba(130, 130, 130, .3);
+	text-align: center;
+	margin-top:370px;
+	font-family: "One Fell Swoop";
+	font-size: 1.5em;
+	color: white;
+	display: inline-block;
+}
+
+
+#WrapperTres{
+	display: inline-block;
+	margin-left: 1.5em;
+	float: right;
+	width: 300px;
+	height: 450px;
+	background-color:;
+}
+
+#textoTres{
+	position: absolute;
+	width: 300px;
+	height: 80px;
+	background: rgba(130, 130, 130, .3);
+	text-align: center;
+	margin-top:370px;
+	font-family: "One Fell Swoop";
+	font-size: 1.5em;
+	color: white;
+	display: inline-block;
+}
+
+#textoBottomSeccionDos{
+ letter-spacing:1px;
+    line-height:2em;
+   
+}
+
+#seccionUno{
+    margin-top: 3em;
+    background-color: ;
+    width: 100%;
+    height: 500px;
+}
+
+#seccionUno h1{
+text-align: center;
+font-family: "Futura T OT";
+font-size: 1.4em;
+}
+
+#imagenSeccionUno{
+    width:30%;
+    height:200px;
+    display:inline-block;
+}
+
+#textoSeccionUno{
+    width:25%;
+    display: inline-block;
+    font-family: "Futura T OT";
+    letter-spacing:1px;
+    line-height:2em;
+    margin-left: 2em;
+    margin-top:2em;
+}
+
+
+#propuestaContainer{
+	width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color:;
+}
+
+#propuesta{
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom: 2em;
+	margin-left: 3.2em;
+	width: 200px;
+	text-align: center;
+	border-left:1px inset #efefef;
+	background-color: ;
+	font-family: 'Poiret One', cursive;
+	font-size: .8em;
+	letter-spacing: 2px;
+}
+
+#sobre{
+width: 35px;
+}
+
+#textoBottom{
+	width: 75%;
+	font-family: "Futura T OT";
+	letter-spacing:;
+    line-height:2em;
+}
+
+footer{
+	width: 100%;
+	background-color: ;
+	font-family: "Futura T OT";
+	font-size: .8em;
+	border-top:1px inset #efefef;
+	margin-bottom:1em;
+}
+
+#menuDos{
+	margin-top: 2em;
+    font-family: "Futura T OT";
+	display: inline-block;
+	color: black;
+	background-color:;
+}
+
+#menuDos li{
+	list-style-type: circle;
+	display: inline-block;
+	margin-right: 1.5em;
+	padding:0;
+}
+
+footer p{
+	display: inline-block;
+}
+
+#socialContainer{
+   float: right;
+   display: inline-block;
+}
+
+#facebook{
+  width: 25px;
+}
+
+#twitter{
+   width: 25px;
+   margin-left: .5em;
+}

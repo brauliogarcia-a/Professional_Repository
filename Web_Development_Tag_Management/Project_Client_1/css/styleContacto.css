@@ -1,0 +1,281 @@
+@font-face{
+  font-family: 'Montserrat';
+  src: url("font/Montserrat-Regular.svg");
+}
+
+@font-face{
+  font-family: 'Montserrat';
+  src: url("font/Montserrat-Bold.svg");
+}
+
+@font-face{
+  font-family: 'Montserrat';
+  src: url("font/Montserrat-Regular.ttf");
+}
+
+@font-face{
+  font-family: 'Montserrat';
+  src: url("font/MontserratRegular.eot");
+}
+
+
+@font-face{
+  font-family: 'Montserrat';
+  src: url("font/MontserratRegular.woff");
+}
+
+@font-face{
+  font-family: 'Lobster';
+  src: url("font/Lobster.ttf");
+}
+
+@font-face{
+  font-family: 'Lobster';
+  src: url("font/Lobster.svg");
+}
+
+
+/* bloque1 */
+
+body{
+   overflow-x:hidden; 
+   height:1320px;
+   margin: 0 auto;   
+}
+
+/* bloque1*/
+
+.bloque1{
+  height:80px;
+  background-color: #FFFFFF;
+  z-index: 1;
+}
+
+.logo{
+  position: relative;
+  left:21.5%;
+  top:5px;
+  z-index:2;
+  margin: 0;
+  display: inline-block;
+}
+
+
+.menu{
+  width: 40%;
+  top:20px;
+  position: absolute;
+  display: inline-block;
+  list-style: none;
+  right:12.5%;
+  font-color:#009CAC;
+  font-size: .8em;
+  letter-spacing:.1em;
+  font-weight: regular;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-text-stroke-width: 0.6px;
+  text-stroke-width: 0.6px;
+  z-index: 2;
+}
+
+.menu ul{
+  list-style: none;
+
+}
+
+.menu li{
+   padding-left:10%;
+   display: inline;
+}
+
+
+a{text-decoration:none;}
+a{color:#58595B; }
+a:visited{ color:#58595B; }
+a:hover{color:#009CAC; text-decoration:underline;  }
+
+span{
+  color:#009CAC;
+}
+
+
+/* Bloque2 */
+.bloque2{
+  background-color:#F1F1F2;
+  height: 820px;
+  max-width: 2000px;
+  margin:0 auto;
+  z-index: -1;
+}
+
+.wrapper{
+  position: absolute;
+  left:26.5%;
+  width:70%;
+  height:500px;
+  margin-top:1%;
+}
+
+input:focus { border: 1px solid #009CAC; }
+
+.contactanos{
+  position:absolute;
+  top:1px;
+  margin-left:19.5%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 33pt;
+  color: #009CAC;
+  z-index: 2;
+  -webkit-text-stroke-width: 0.4px;
+  text-stroke-width: 0.4px;
+ }
+
+
+.nombre{
+  position: absolute;
+  top: 150px;
+  left:1%;
+  font-size: 15pt;
+  font-family: 'Montserrat', sans-serif;
+  color:#58595B;
+  margin-right: 5%;
+  z-index: 3;
+  -webkit-text-stroke-width: 0.4px;
+  text-stroke-width: 0.4px;
+}
+
+ .correo{
+  position: absolute;
+  top: 235px;
+  left:1%;
+  font-size: 15pt;
+  font-family: 'Montserrat', sans-serif;
+  color:#58595B;
+  margin: 0;
+  z-index: 3;
+  -webkit-text-stroke-width: 0.4px;
+   text-stroke-width: 0.4px;
+}
+
+ .telefono{
+  position: absolute;
+  top:320px;
+  left:1%;
+  font-size: 15pt;
+  font-family: 'Montserrat', sans-serif;
+  color:#58595B;
+  margin: 0;
+  z-index: 3;
+  -webkit-text-stroke-width: 0.4px;
+  text-stroke-width: 0.4px;
+ }
+
+
+.ayuda{
+  position: absolute;
+  top: 405px;
+  left:1%;
+  font-size: 15pt;
+  font-family: 'Montserrat', sans-serif;
+  color:#58595B;
+  margin: 0;
+  z-index: 3;
+  -webkit-text-stroke-width: 0.4px;
+   text-stroke-width: 0.4px;
+}
+
+.enviar{
+  position: absolute;
+  top:610px;
+  left:1%;
+  font-size: 15pt;
+  font-family: 'Montserrat', sans-serif;
+  color:#58595B;
+  margin: 0;
+  z-index: 3;
+  -webkit-text-stroke-width: 0.4px;
+  text-stroke-width: 0.4px;
+}
+
+.sugerencias{
+  position: absolute;
+  top: 170px;
+  right:34.5%;
+  font-size: 15pt;
+  font-family: 'Montserrat', sans-serif;
+  color:#58595B;
+  margin: 0;
+  z-index: 3;
+  -webkit-text-stroke-width: 0.4px;
+   text-stroke-width: 0.4px;
+
+}
+
+.titulo{
+  position: absolute;
+  top:340px;
+  right:34.5%;
+  font-size: 15pt;
+  font-family: 'Montserrat', sans-serif;
+  color:#58595B;
+  margin: 0;
+  z-index: 3;
+  -webkit-text-stroke-width: 0.4px;
+   text-stroke-width: 0.4px;
+}
+
+
+
+
+/* bloque3 */
+
+.bloque3{
+  background-color: #FFFFFF;  
+  hieght:410px;
+  z-index: 1;
+}
+
+.menu2{
+  margin-top: 60px;
+  position: absolute;
+  list-style: none;
+  left:24%;
+  font-size:10pt;
+  font-weight: lighter; 
+  z-index: 2;
+  font-family: 'Montserrat', sans-serif;
+  color:#58595B;
+  text-stroke-width: 0.5px;
+  -webkit-text-stroke-width: 0.5px;
+}
+
+.menu2 li{
+  padding-bottom: 20px;
+}
+
+
+.informacion{
+  position: absolute;
+  margin-top:60px;
+  left:56%;
+  font-size: 10pt;
+  z-index: 2;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing:.01em;
+  color:#58595B;
+  text-stroke-width: 0.4px;
+  -webkit-text-stroke-width: 0.4px;
+}
+
+.marca{
+  position: absolute;
+  margin-top: 335px;
+  left:26%;
+  font-size:14px; 
+  z-index: 2;
+  font-family: Arial;
+  color:#58595B;
+}
+
+
+

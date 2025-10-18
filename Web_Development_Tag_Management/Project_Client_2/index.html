@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Acasa Eventos Y Banquetes</title>
+ <link rel="stylesheet" type="text/css" href="css/index.css">
+ <link rel="shortcut icon" href="img/favicon.png">
+ <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+ <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<header>
+<a href="index.html"><img id="logo" src="img/acasaLogo.png"></a>
+<ul id="menu">
+	<a href="index.html"><li>Inicio</li></a>
+	<a href="somos.html"><li>Quienes somos</li></a>
+        <a href="galeria.html"><li>Galeria</li></a>
+	<a href="servicios.html"><li>Servicios</li></a>
+	<a href="contacto.html"><li>Contacto</li></a>
+</ul>
+</header>
+<section id="banner">
+<div id="textoBanner"><p>Un Placer Hecho Tradicion</p></div>
+ <div id="slider">
+        <img class="mySlides" src="img/banner.png" style="width:1000px; height: 400px;">
+        <img class="mySlides" src="img/banner2.jpg" style="width:1000px; height: 400px;">
+        <img class="mySlides" src="img/banner3.jpg" style="width:1000px; height: 400px;>
+    </div>
+</div>
+
+</section>
+
+<section id="texto1"><p>Nos es grato poner a su disposición nuestra empresa de Banquetes <span>Acasa</span> con más de 15 años de experiencia en la Organización de todo tipo de Eventos Sociales y Empresariales :  Graduaciones, Fiestas familiares, Infantiles, Bodas, Convenciones, Presentaciones de nuevos productos y Juntas de Trabajo.<br>Le asesoramos durante la planeación y nos encargamos de toda la organización hasta el día del Evento en que estaremos supervisando cada una de las actividades, cuidando los detalles para que usted solamente disfrute la celebración en compañía de sus invitados.</p></section>
+
+<section id="seccionDos">
+ 
+  <div id="textoBottomSeccionDos"></div>
+   <div id="WrapperUno"> 
+    <div id="textoUno" ><p>Conoce nuestra decoracion</p></div>
+    <img id="imagenUno" src="img/evento.jpg">
+   </div> 
+   <div id="WrapperDos">
+    <div id="textoDos"><p>Terrazas y Salones</p></div>
+    <img id="imagenDos" src="img/evento2.jpg">
+   </div>
+   <div id="WrapperTres">
+    <div id="textoTres"><p>Platillos</p></div>
+    <img id="imagenTres" src="img/pastel.jpg">
+   </div>
+ 
+</section>
+
+
+<section id="propuestaContainer">
+  <div id="textoBottom"><p>Como opciones le ofrecemos coordinarlo dentro de sus instalaciones o en los mejores salones<br> terrazas con capacidad para albergar de 100 hasta 4000 personas.<br>Los Salones y terrazas se encuentra dentro de la zona Metropolitina de Guadalajara y sus alrededores</p></div>
+   <a href="contacto.html"><div id="propuesta">
+    <strong><p>Tenemos una propuesta<br>para ti</p></strong>
+    <img id="sobre" src="img/sobre.png">
+   </div></a>
+  
+</section>
+
+
+<footer>
+   <div id="menuDos">
+	<a href="index.html"><li>Inicio</li></a>
+	<a href="somos.html"><li>Quienes somos</li></a>
+        <a href="galeria.html"><li>Galeria</li></a>
+	<a href="servicios.html"><li>Servicios </li></a>
+	<a href="contacto.html"><li>Contacto</li></a>
+	<li style="margin-left:2em;">&reg;Acasa 2016</li>
+   </div>
+	<p>Galaxia #4091 | Colonia Lomas Atlas | Tel. 38-13-01-61 |  Cel. 33-35-05-45-46 | banquetesacasa@gmail.com</p>
+   <div id="socialContainer"><a href="https://www.facebook.com/Banquetes-Acasa-336625016409604/"><img id="facebook" src="img/facebook.png"></a><a href="https://twitter.com/acasaeventosb"><img id="twitter" src="img/twitter.png"></a></div>
+</footer>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77518571-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+var slideIndex4 = 0;
+banner();
+
+function banner() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex4++;
+    if (slideIndex4 > x.length) {slideIndex4 = 1} 
+    x[slideIndex4-1].style.display = "block"; 
+    setTimeout(banner, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

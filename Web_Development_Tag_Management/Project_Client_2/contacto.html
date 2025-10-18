@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Acasa Eventos Y Banquetes</title>
+ <link rel="stylesheet" type="text/css" href="css/contacto.css">
+ <link rel="shortcut icon" href="img/favicon.png">
+ <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+ <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<header>
+<a href="index.html"><img id="logo" src="img/acasaLogo.png"></a>
+<ul id="menu">
+	<a href="index.html"><li>Inicio</li></a>
+	<a href="somos.html"><li>Quienes somos</li></a>
+  <a href="galeria.html"><li>Galeria</li></a>
+	<a href="servicios.html"><li>Servicios</li></a>
+	<a href="contacto.html"><li>Contacto</li></a>
+</ul>
+</header>
+
+<section id="camposContainer">
+
+<h1>CONTACTO</h1>
+
+<div id="container">
+<p>*No es Necesario llenar todos los campos para enviar el formulario</p>
+<form name="contacto" action="enviar.php" method="POST">
+<div class="nombre">
+  <p>
+    <label>Nombre<br/></label>
+    <input id="nome" name="nombre" type="text">
+  </p>
+</div>
+
+<div class="correo">
+  <p>
+    <label>Correo Electronico<br/></label>
+    <input id="mail" name="correo" type="email">
+  </p>
+</div>
+
+<div class="telefono">
+  <p>
+    <label>Telefono<br/></label>
+    <input id="phone" name="telefono" type="tel">
+  </p>
+</div>
+
+<div id="tipo">
+<label>Tipo de Evento<br><br></label>
+<label>Empresarial
+  <input name="tipo" type="radio" value="Empresarial">
+</label>
+<label>Social
+  <input name="tipo" type="radio" value="Social">
+</label>
+</div>
+ 
+<div id="como">
+<label>Como nos contacto<br><br></label>
+<label>Un Amigo
+  <input name="como" type="radio" value="Amigo">
+</label>
+<label>Internet
+  <input name="como" type="radio" value="Internet">
+</label>
+<label>Redes Sociales
+  <input name="como" type="radio" value="Sociales">
+</label>
+</div>
+<input id="enviar" type="submit" value="ENVIAR">
+</form>
+</div> <!-- Fin de container-->
+<div id="texto">
+  <p>Acasa pone a su disposicion nuestra pagina de contacto asi como nuestros datos de contacto</p>
+  <p>Galaxia #4091<br>Colonia Lomas Atlas<br>Tel. 38-13-01-61<br>Cel. 33-35-05-45-46<br>banquetesacasa@gmail.com</p>
+  <p>Tambien puedes contactarnos por me dio de nuestro perfil en <a href="https://www.facebook.com/Banquetes-Acasa-336625016409604/">facebook</a> o <a href="">Twitter</a></p>
+  <p>o envianos un correo <a href="mailto:info@acasaeventosybanquetes.com"><img id="sobre" src="img/sobre.png"></p><br></a>
+  <p>Contactanos por<a href="skype:acasaeventosybanquetes?call"><img id="skype" src="img/skype.png"></a></p>
+</div>
+</section>
+<footer>
+   <div id="menuDos">
+	<a href="index.html"><li>Inicio</li></a>
+	<a href="somos.html"><li>Quienes somos</li></a>
+   <a href="galeria.html"><li>Galeria</li></a>
+	<a href="servicios.html"><li>Servicios </li></a>
+	<a href="contacto.html"><li>Contacto</li></a>
+	<li style="margin-left:2em;">&reg;Acasa 2016</li>
+   </div>
+	<p>Galaxia #4091 | Colonia Lomas Atlas | Tel. 38-13-01-61 |  Cel. 33-35-05-45-46 | banquetesacasa@gmail.com</p>
+   <div id="socialContainer"><a href="https://www.facebook.com/Banquetes-Acasa-336625016409604/"><img id="facebook" src="img/facebook.png"></a><a href="https://twitter.com/acasaeventosb"><img id="twitter" src="img/twitter.png"></a></div>
+</footer>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77518571-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

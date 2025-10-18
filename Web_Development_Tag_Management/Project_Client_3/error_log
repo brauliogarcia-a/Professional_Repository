@@ -1,0 +1,434 @@
+[06-Mar-2015 21:38:07 UTC] PHP Warning:  date(): Invalid date.timezone value 'UTC-6', we selected the timezone 'UTC' for now. in /home/mueblesp/public_html/enviar.php on line 15
+[21-Mar-2015 21:20:03 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/mueblesp/public_html/php/Conexion.php on line 2
+[21-Mar-2015 21:20:07 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/mueblesp/public_html/php/Conexion.php on line 2
+[21-Mar-2015 21:21:31 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/mueblesp/public_html/php/Conexion.php on line 2
+[21-Mar-2015 21:46:27 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/mueblesp/public_html/php/Conexion.php on line 2
+[21-Mar-2015 21:46:29 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/mueblesp/public_html/php/Conexion.php on line 2
+[21-Mar-2015 22:05:13 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/mueblesp/public_html/php/Conexion.php on line 2
+[21-Mar-2015 22:10:24 UTC] PHP Parse error:  syntax error, unexpected 'date_default_timezone_set' (T_STRING) in /home/mueblesp/public_html/php/Conexion.php on line 2
+[21-Mar-2015 22:12:43 UTC] PHP Parse error:  syntax error, unexpected 'date_default_timezone_set' (T_STRING) in /home/mueblesp/public_html/php/Conexion.php on line 2
+[21-Mar-2015 22:12:46 UTC] PHP Parse error:  syntax error, unexpected 'date_default_timezone_set' (T_STRING) in /home/mueblesp/public_html/php/Conexion.php on line 2
+[21-Mar-2015 22:14:07 UTC] PHP Parse error:  syntax error, unexpected 'date_default_timezone_set' (T_STRING) in /home/mueblesp/public_html/php/Conexion.php on line 2
+[21-Mar-2015 16:24:41 America/Mexico_City] PHP Parse error:  syntax error, unexpected 'date_default_timezone_set' (T_STRING) in /home/mueblesp/public_html/php/Conexion.php on line 2
+[21-Mar-2015 16:25:17 America/Mexico_City] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/mueblesp/public_html/php/Conexion.php on line 3
+[21-Mar-2015 16:25:42 America/Mexico_City] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in /home/mueblesp/public_html/php/Conexion.php on line 15
+[21-Mar-2015 16:28:12 America/Mexico_City] PHP Parse error:  syntax error, unexpected ',' in /home/mueblesp/public_html/php/Conexion.php on line 23
+[21-Mar-2015 16:31:03 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 40
+[21-Mar-2015 16:31:06 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 40
+[21-Mar-2015 16:31:32 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 40
+[21-Mar-2015 16:32:24 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 40
+[21-Mar-2015 16:32:26 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 40
+[21-Mar-2015 16:35:48 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 40
+[21-Mar-2015 16:37:22 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 40
+[21-Mar-2015 16:37:23 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 40
+[21-Mar-2015 16:37:24 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 40
+[21-Mar-2015 16:37:24 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 40
+[21-Mar-2015 16:39:23 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 40
+[21-Mar-2015 16:40:28 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 40
+[21-Mar-2015 16:40:48 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 40
+[21-Mar-2015 16:44:20 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 40
+[21-Mar-2015 16:44:31 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 40
+[21-Mar-2015 16:48:41 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 11
+[21-Mar-2015 16:48:41 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo config.ini.' in /home/mueblesp/public_html/php/Conexion.php:12
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 12
+[21-Mar-2015 16:50:57 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 11
+[21-Mar-2015 16:50:57 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo config.ini.' in /home/mueblesp/public_html/php/Conexion.php:13
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 13
+[21-Mar-2015 16:51:05 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 11
+[21-Mar-2015 16:51:05 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo config.ini.' in /home/mueblesp/public_html/php/Conexion.php:13
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 13
+[21-Mar-2015 16:52:50 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in php/config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 11
+[21-Mar-2015 16:52:50 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo php/config.ini.' in /home/mueblesp/public_html/php/Conexion.php:13
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 13
+[21-Mar-2015 16:52:51 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in php/config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 11
+[21-Mar-2015 16:52:51 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo php/config.ini.' in /home/mueblesp/public_html/php/Conexion.php:13
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 13
+[21-Mar-2015 16:52:52 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in php/config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 11
+[21-Mar-2015 16:52:52 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo php/config.ini.' in /home/mueblesp/public_html/php/Conexion.php:13
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 13
+[21-Mar-2015 16:53:49 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in php/config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 12
+[21-Mar-2015 16:53:49 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo php/config.ini.' in /home/mueblesp/public_html/php/Conexion.php:14
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 14
+[21-Mar-2015 16:53:50 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in php/config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 12
+[21-Mar-2015 16:53:50 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo php/config.ini.' in /home/mueblesp/public_html/php/Conexion.php:14
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 14
+[21-Mar-2015 16:53:50 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in php/config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 12
+[21-Mar-2015 16:53:50 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo php/config.ini.' in /home/mueblesp/public_html/php/Conexion.php:14
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 14
+[21-Mar-2015 16:53:50 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in php/config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 12
+[21-Mar-2015 16:53:50 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo php/config.ini.' in /home/mueblesp/public_html/php/Conexion.php:14
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 14
+[21-Mar-2015 16:53:50 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in php/config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 12
+[21-Mar-2015 16:53:50 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo php/config.ini.' in /home/mueblesp/public_html/php/Conexion.php:14
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 14
+[21-Mar-2015 16:55:04 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 11
+[21-Mar-2015 16:55:04 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo config.ini.' in /home/mueblesp/public_html/php/Conexion.php:13
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 13
+[21-Mar-2015 16:55:05 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 11
+[21-Mar-2015 16:55:05 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo config.ini.' in /home/mueblesp/public_html/php/Conexion.php:13
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 13
+[21-Mar-2015 16:55:05 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 11
+[21-Mar-2015 16:55:05 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo config.ini.' in /home/mueblesp/public_html/php/Conexion.php:13
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 13
+[21-Mar-2015 16:58:21 America/Mexico_City] PHP Warning:  parse_ini_file(WP_PLUGIN_DIRconfig.ini): failed to open stream: No such file or directory in /home/mueblesp/public_html/php/Conexion.php on line 12
+[21-Mar-2015 16:58:21 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo WP_PLUGIN_DIRconfig.ini.' in /home/mueblesp/public_html/php/Conexion.php:14
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 14
+[21-Mar-2015 16:58:22 America/Mexico_City] PHP Warning:  parse_ini_file(WP_PLUGIN_DIRconfig.ini): failed to open stream: No such file or directory in /home/mueblesp/public_html/php/Conexion.php on line 12
+[21-Mar-2015 16:58:22 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo WP_PLUGIN_DIRconfig.ini.' in /home/mueblesp/public_html/php/Conexion.php:14
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 14
+[21-Mar-2015 16:59:11 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 12
+[21-Mar-2015 16:59:11 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo config.ini.' in /home/mueblesp/public_html/php/Conexion.php:14
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 14
+[21-Mar-2015 17:01:19 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 11
+[21-Mar-2015 17:01:19 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo config.ini.' in /home/mueblesp/public_html/php/Conexion.php:14
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 14
+[21-Mar-2015 17:01:22 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 11
+[21-Mar-2015 17:01:22 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo config.ini.' in /home/mueblesp/public_html/php/Conexion.php:14
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 14
+[21-Mar-2015 17:01:35 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 11
+[21-Mar-2015 17:01:35 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo config.ini.' in /home/mueblesp/public_html/php/Conexion.php:14
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 14
+[21-Mar-2015 17:01:36 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 11
+[21-Mar-2015 17:01:36 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo config.ini.' in /home/mueblesp/public_html/php/Conexion.php:14
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 14
+[21-Mar-2015 17:01:36 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 11
+[21-Mar-2015 17:01:36 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo config.ini.' in /home/mueblesp/public_html/php/Conexion.php:14
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 14
+[21-Mar-2015 17:01:36 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 11
+[21-Mar-2015 17:01:36 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo config.ini.' in /home/mueblesp/public_html/php/Conexion.php:14
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 14
+[21-Mar-2015 17:01:36 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 11
+[21-Mar-2015 17:01:36 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo config.ini.' in /home/mueblesp/public_html/php/Conexion.php:14
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 14
+[21-Mar-2015 17:01:36 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 11
+[21-Mar-2015 17:01:36 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo config.ini.' in /home/mueblesp/public_html/php/Conexion.php:14
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 14
+[21-Mar-2015 17:02:10 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 12
+[21-Mar-2015 17:02:10 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo config.ini.' in /home/mueblesp/public_html/php/Conexion.php:15
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 15
+[21-Mar-2015 17:02:10 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 12
+[21-Mar-2015 17:02:10 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo config.ini.' in /home/mueblesp/public_html/php/Conexion.php:15
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 15
+[21-Mar-2015 17:02:11 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 12
+[21-Mar-2015 17:02:11 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo config.ini.' in /home/mueblesp/public_html/php/Conexion.php:15
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 15
+[21-Mar-2015 17:02:11 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 12
+[21-Mar-2015 17:02:11 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo config.ini.' in /home/mueblesp/public_html/php/Conexion.php:15
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 15
+[21-Mar-2015 17:02:37 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 43
+[21-Mar-2015 17:04:25 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 43
+[21-Mar-2015 17:08:28 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 43
+[21-Mar-2015 17:09:00 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 43
+[21-Mar-2015 17:12:42 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 43
+[21-Mar-2015 17:12:51 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 43
+[21-Mar-2015 17:13:41 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:14:04 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:15:48 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:15:49 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:15:49 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:15:50 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:15:50 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:15:50 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:15:50 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:15:50 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:16:41 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:16:48 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:17:01 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:19:41 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:19:42 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:19:43 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:19:43 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:21:12 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:22:14 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:22:20 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:27:02 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:27:39 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:30:40 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:30:43 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:31:29 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:31:31 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:34:23 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:34:32 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:34:33 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:34:34 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:34:34 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:34:35 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:43:57 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:43:59 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:44:01 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:48:29 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 17:49:04 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:11:20 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:12:15 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:15:59 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:16:01 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:16:13 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:16:22 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:20:14 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:20:17 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:26:01 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:26:05 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:26:10 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:29:24 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:29:45 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:32:44 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:32:47 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:33:27 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:33:46 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:33:47 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:34:34 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:36:19 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:41:46 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[21-Mar-2015 18:42:15 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Mar-2015 00:01:54 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Mar-2015 00:02:05 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 12
+[22-Mar-2015 00:02:05 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo config.ini.' in /home/mueblesp/public_html/php/Conexion.php:14
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 14
+[22-Mar-2015 00:02:24 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Mar-2015 00:21:06 America/Mexico_City] PHP Warning:  syntax error, unexpected ')' in config.ini on line 7
+ in /home/mueblesp/public_html/php/Conexion.php on line 12
+[22-Mar-2015 00:21:06 America/Mexico_City] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se pude abrir el archivo config.ini.' in /home/mueblesp/public_html/php/Conexion.php:14
+Stack trace:
+#0 /home/mueblesp/public_html/php/ProductoDAO.php(24): Conexion->__construct()
+#1 /home/mueblesp/public_html/catalogo.php(10): ProductoDAO->getCategorias()
+#2 {main}
+  thrown in /home/mueblesp/public_html/php/Conexion.php on line 14
+[22-Mar-2015 00:23:14 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/mueblesp/public_html/catalogo.php on line 94
+[22-Mar-2015 00:24:00 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Mar-2015 00:24:49 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Mar-2015 00:24:51 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Mar-2015 00:24:53 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Mar-2015 00:25:03 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Mar-2015 00:25:05 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Mar-2015 00:25:08 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Mar-2015 00:25:27 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/mueblesp/public_html/catalogo.php on line 94
+[22-Mar-2015 00:25:43 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/mueblesp/public_html/catalogo.php on line 94
+[22-Mar-2015 00:28:23 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/mueblesp/public_html/catalogo.php on line 94
+[22-Mar-2015 00:28:25 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/mueblesp/public_html/catalogo.php on line 94
+[22-Mar-2015 00:28:30 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/mueblesp/public_html/catalogo.php on line 94
+[22-Mar-2015 00:32:25 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/mueblesp/public_html/catalogo.php on line 94
+[22-Mar-2015 00:34:46 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/mueblesp/public_html/catalogo.php on line 94
+[22-Mar-2015 00:34:49 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/mueblesp/public_html/catalogo.php on line 94
+[22-Mar-2015 00:35:02 America/Mexico_City] PHP Warning:  Invalid argument supplied for foreach() in /home/mueblesp/public_html/catalogo.php on line 94
+[22-Mar-2015 22:17:34 UTC] PHP Warning:  number_format() expects parameter 2 to be long, string given in /home/mueblesp/public_html/producto.php on line 129
+[22-Mar-2015 22:18:09 UTC] PHP Warning:  number_format() expects parameter 2 to be long, string given in /home/mueblesp/public_html/producto.php on line 129
+[22-Mar-2015 22:18:11 UTC] PHP Warning:  number_format() expects parameter 2 to be long, string given in /home/mueblesp/public_html/producto.php on line 129
+[22-Mar-2015 16:18:50 America/Mexico_City] PHP Warning:  number_format() expects parameter 2 to be long, string given in /home/mueblesp/public_html/producto.php on line 130
+[23-Mar-2015 06:07:27 UTC] PHP Parse error:  syntax error, unexpected '"."' (T_CONSTANT_ENCAPSED_STRING) in /home/mueblesp/public_html/producto.php on line 119
+[23-Mar-2015 06:07:52 UTC] PHP Parse error:  syntax error, unexpected '"."' (T_CONSTANT_ENCAPSED_STRING) in /home/mueblesp/public_html/producto.php on line 121
+[23-Mar-2015 06:07:54 UTC] PHP Parse error:  syntax error, unexpected '"."' (T_CONSTANT_ENCAPSED_STRING) in /home/mueblesp/public_html/producto.php on line 121
+[23-Mar-2015 06:07:59 UTC] PHP Parse error:  syntax error, unexpected '"."' (T_CONSTANT_ENCAPSED_STRING) in /home/mueblesp/public_html/producto.php on line 121
+[22-Sep-2015 21:16:30 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Sep-2015 21:16:52 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Sep-2015 21:17:55 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Sep-2015 21:18:01 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Sep-2015 21:20:22 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Sep-2015 21:20:53 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Sep-2015 21:22:20 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Sep-2015 21:22:53 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Sep-2015 21:22:56 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Sep-2015 21:23:24 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Sep-2015 21:23:29 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Sep-2015 21:31:48 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Sep-2015 21:34:11 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Sep-2015 21:40:17 America/Mexico_City] PHP Warning:  require_once(php/ProductoDAO.php): failed to open stream: Permission denied in /home/mueblesp/public_html/catalogo.php on line 5
+[22-Sep-2015 21:40:17 America/Mexico_City] PHP Fatal error:  require_once(): Failed opening required 'php/ProductoDAO.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mueblesp/public_html/catalogo.php on line 5
+[22-Sep-2015 21:40:47 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[22-Sep-2015 21:42:51 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 04:01:05 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 12:32:41 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 12:43:01 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 12:43:02 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 12:43:03 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 12:43:05 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 12:48:21 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 12:48:23 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 12:48:24 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 12:49:22 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 12:49:23 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 12:50:19 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 13:18:59 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 13:26:55 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 13:41:01 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 15:20:34 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 23:27:43 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 23:31:03 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 23:31:05 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 23:31:13 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 23:33:09 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 23:33:10 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 23:34:54 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 23:40:23 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 23:40:28 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 23:42:06 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 23:42:08 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 23:46:12 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[23-Sep-2015 23:47:35 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[24-Sep-2015 02:47:14 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[24-Sep-2015 14:51:07 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[24-Sep-2015 14:51:16 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[24-Sep-2015 18:40:29 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[24-Sep-2015 20:38:06 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[24-Sep-2015 20:57:19 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[24-Sep-2015 21:03:51 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[24-Sep-2015 21:03:53 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[24-Sep-2015 21:08:42 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[24-Sep-2015 21:13:50 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[24-Sep-2015 21:13:52 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[24-Sep-2015 21:13:53 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[24-Sep-2015 21:13:54 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[24-Sep-2015 21:14:06 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[24-Sep-2015 21:14:08 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[24-Sep-2015 21:14:44 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[24-Sep-2015 21:14:45 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[24-Sep-2015 21:21:36 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[24-Sep-2015 21:21:39 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
+[24-Sep-2015 21:21:40 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mueblesp/public_html/php/Conexion.php on line 42
