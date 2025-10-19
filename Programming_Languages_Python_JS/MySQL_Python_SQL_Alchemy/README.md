@@ -6,7 +6,7 @@ The script is going to use some traditional SQL, but also is going to use the si
 
 Purpose: This python script, is going to create a database, create some tables based on two CSV files, and run some queries to a local database hosted in MySQL. 
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.youtube.com/watch?v=2bQ_9_--kLE)
 
 # Relational Database
 
