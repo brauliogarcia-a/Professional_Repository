@@ -1,0 +1,94 @@
+@media (max-width: 1450px) {
+    .towns section{
+        width: 40%;
+    
+    }
+}
+
+
+@media (max-width: 1000px) {
+
+.banner{
+        margin: -16px;
+    }
+
+ .hide{
+        display: none;
+    }
+
+  .headerWidth{
+      text-align: center;
+  }
+  
+  button{
+      display: inline;
+  }
+    
+  .headerWidth ul li{
+    display: block;
+    padding: 1em 0 1em 0;
+   }
+
+   .headerWidth ul{
+    text-align: center;
+}
+
+main{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1em 0 1em 0;
+    background-color: #d1d5da;
+}
+
+/*preston middle page week 10*/
+.hide{
+    display: none;
+}
+
+.headerWidth{
+  text-align: center;
+}
+
+button{
+  display: inline;
+}
+
+.headerWidth ul li{
+display: block;
+padding: 1em 0 1em 0;
+}
+
+.headerWidth ul{
+text-align: center;
+}
+
+main{
+max-width: 100%;
+margin: 0 auto;
+padding: 1em 0 1em 0;
+background-color: #d1d5da;
+}
+
+#banner{
+margin: -16px;
+}
+
+#imgR{
+display: none;
+}
+
+#imgM{
+display: inline-block;
+}
+
+#imgS{
+display: none;
+}
+
+/* style for the gallery page */
+figure{
+    width: 40%;
+}
+
+
+}

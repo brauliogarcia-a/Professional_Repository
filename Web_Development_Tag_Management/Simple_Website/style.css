@@ -1,0 +1,499 @@
+/* CSS files add styling rules to your content */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  background-color: #f2f2f2;
+  margin:0;
+  padding:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', Futura;
+  color: #141414;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:visited{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+
+#content{
+  max-width:960px;
+  margin: 0 auto;
+  font-size: 1.1em;
+  background-color: #ffffff;
+  display: grid; 
+  grid-template-columns: repeat(10,1fr);
+}
+
+/* Styles for the header*/
+
+header{
+  grid-column: 1/-1;
+  background-color: #BEBEBE;
+}
+
+.header-container{
+  display: grid; 
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: repeat(5,20px);
+}
+
+.logo-box{
+  width:300px;
+  height: 100px;
+  margin: 0 0 0 1.5em;
+  padding:0;
+}
+
+.logo-box img{
+  height:100%;
+}
+
+nav{
+  grid-column: 2/10;
+  grid-row: 3/3;
+}
+
+nav ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+}
+
+nav a{
+  font-family: 'Roboto', Futura; 
+  color: black;
+} 
+
+li{
+  list-style: none;
+  display: inline;
+  padding:0;
+  text-align:center;
+}
+
+/* Style for banner */
+#banner-box{
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+#banner-box img{
+  max-width:100%;
+  height: 300px;
+  grid-column: 1/-1;
+  grid-row: 1/1;
+  z-index: 1;
+}
+
+.action{
+  background-color: rgba(240, 240, 240, 0.8);
+  padding: 1em;
+  margin: 3em;
+  text-align: center;
+  grid-column: 2/2;
+  grid-row: 1/1;
+  z-index: 2;
+}
+
+.action h3{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.action button {
+    line-height: 2em;
+    width: 10em;
+    background-color: #e7c24f;
+    font-size: 1.2em;
+    font-family: 'Roboto', Futura; 
+    font-weight: bold;
+}
+
+/* Style for main*/
+main{
+  grid-column: 1/-1;
+  background-color: #ffffff;
+}
+
+
+/* Style the central content*/
+.home-grid{
+  display:grid;
+  grid-template-columns: repeat(14,1fr);
+  grid-template-rows: repeat(14,51.7px);
+}
+
+.home-headline-1{
+  grid-column: 1/12;
+  grid-row: 2/2;
+  margin: 0 0 0 3em;
+}
+
+.home-paragraph-1{
+  grid-column: 3/8;
+  grid-row: 3/4;
+}
+
+.home-right-img{
+  grid-column: 8/13;
+  grid-row:2/2;
+  width: 342.5px;
+  margin-left:3em;
+}
+
+.home-left-img{
+  width: 342.5px;
+  grid-column: 2/6;
+  grid-row: 9/12;
+}
+
+.home-headline-2{
+  grid-column: 7/15;
+  grid-row: 9/10;
+  margin: 0 0 0 3em;
+}
+
+.home-paragraph-2{
+  grid-column: 9/15;
+  grid-row: 10/14;
+  padding: 0 3em 0 0;
+}
+
+.home-paragraph-3{
+  height:150px;
+  grid-column: 1/-1;
+  text-align: center;
+  background-color: #DBC32F;
+  margin: 0;
+}
+  
+.hp-wrapper{
+  display: grid;
+  grid-template-columns: repeat(11,1fr);
+  grid-template-rows: repeat(3,50px);
+}
+
+.hp-wrapper h2{
+  grid-column: 4/9;
+  grid-row: 1/1;
+  text-align:center;
+}
+
+
+.hp-wrapper p{
+  grid-column: 1/-1;
+  grid-row: 2/2;
+}
+
+footer{
+  grid-column: 1/-1;
+  background-color: #BEBEBE;
+  color: white;
+}
+
+.footer-wrapper{
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+}
+
+footer p{
+  grid-column: 1/9;
+  margin: 2em 1em 1em 1em;
+}
+
+.social{
+  grid-column: -1/-1;
+  margin: 1em;
+}
+
+.social img{
+  width: 50px;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .7em;
+  background-color: #f2f2f2;
+  margin:0;
+  padding:0;
+}  
+  
+.header-container{
+  display: grid; 
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(8,20px);
+}
+ 
+.logo-box{
+  grid-column: 3/3; 
+  width:300px;
+  height: 100px;
+  margin: 0;
+  padding:0;
+  text-align:center;
+}
+
+.action{
+  background-color: rgba(240, 240, 240, 0.8);
+  padding: 1em;
+  margin: 4em 2em 4em 2em;
+  text-align: center;
+  grid-column: 2/2;
+  grid-row: 1/1;
+  z-index: 2;
+}
+  
+ul,nav{
+  list-style-type: none;
+  margin:0;
+}
+  
+nav{
+  grid-column: 3/3;
+  grid-row: 7/7;
+}
+
+#banner-box img{
+  max-width:100%;
+  height: 250px;
+}
+
+.home-grid{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+}
+  
+.home-headline-1{
+  grid-column: 1/1;
+  margin: 0;
+  padding: 0;
+  text-align:center;
+}
+
+.home-paragraph-1{
+  grid-column: 1/1;
+  text-align: center;
+}
+
+.home-right-img{
+  grid-column: 2/2;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.home-left-img{
+  grid-column: 1/1;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.home-headline-2{
+  grid-column: 2/2;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.home-paragraph-2{
+  grid-column: 2/2;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.home-paragraph-3{
+  height:200px;
+  grid-column: 1/-1;
+  text-align: center;
+  background-color: #BEBEBE;
+  margin: 0;
+}
+  
+.hp-wrapper{
+  display: grid;
+  grid-template-columns: repeat(11,1fr);
+  grid-template-rows: repeat(3,25px);
+}
+
+.hp-wrapper h2{
+  grid-column: 1/-1;
+  grid-row: 2/2;
+  text-align:center;
+}
+
+
+.hp-wrapper p{
+  grid-column: 1/-1;
+  grid-row: 3/3;
+}
+  
+  
+} /* end of media query*/
+
+
+/* Rules for the rivers page*/
+
+.title_rivers{
+  text-align:center;
+  padding: 2em 0 2em 0;
+}
+
+.home-grid-rivers{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(27,50px);
+}
+
+.home-left-img-rivers1{
+  grid-column: 1/1;
+  grid-row: 1/8;
+  width: 95%;
+  margin: 0 0 0 30px;
+  padding: 0;
+}
+
+.home-headline-2-rivers1{
+  grid-column: 2/2;
+  grid-row: 1/2;
+  padding: 0;
+  margin: 0 30px 0 30px;
+  text-align: left;
+}
+
+.home-paragraph-2-rivers1{
+  grid-column: 2/2;
+  grid-row: 2/8;
+  padding: 0;
+  margin: 0 30px 0 30px;
+  text-align: left;
+}
+
+.button1{
+  width:30%;
+  height: 50px;
+  grid-column: 2/2;
+  grid-row: 7/8;
+  margin: 0 30px 0 30px;
+  background-color:#e7c24f;
+}
+
+.home-left-img-rivers2{
+  grid-column: 1/1;
+  grid-row: 10/18;
+  width: 95%;
+  margin: 0 0 0 30px;
+  padding: 0;
+}
+
+.home-headline-2-rivers2{
+  grid-column: 2/2;
+  grid-row: 10/11;
+  padding: 0;
+  margin: 0 30px 0 30px;
+  text-align:left;
+}
+
+.home-paragraph-2-rivers2{
+  grid-column: 2/2;
+  grid-row: 11/18;
+  padding: 0;
+  margin: 0 30px 0 30px;
+  text-align: left;
+}
+
+.button2{
+  width:30%;
+  height: 50px;
+  grid-column: 2/2;
+  grid-row: 16/17;
+  margin: 0 30px 0 30px;
+  background-color:#e7c24f;
+}
+
+.home-left-img-rivers3{
+  grid-column: 1/1;
+  grid-row: 19/28;
+  width: 95%;
+  padding: 0;
+  margin: 0 0 0 30px;
+  text-align:left;
+}
+
+.home-headline-2-rivers3{
+  grid-column: 2/2;
+  grid-row: 19/20;
+  padding: 0;
+  margin: 0 30px 0 30px;
+  text-align:left;
+}
+
+.home-paragraph-2-rivers3{
+  grid-column: 2/2;
+  grid-row: 20/28;
+  padding: 0;
+  margin: 0 30px 0 30px;
+  text-align:left;
+}
+
+.button3{
+  width:30%;
+  height: 50px;
+  grid-column: 2/2;
+  grid-row: 25/26;
+  margin: 0 30px 0 30px;
+  background-color:#e7c24f;
+}
+
+/* Rules for the contact page*/
+
+.home-grid-contact{
+  display:grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: repeat(14,50px);
+}
+
+form{
+  grid-column: 2/10;
+}
+
+input{
+  width: 100%;
+  height: 100px;
+  background-color: #f2f2f2;
+  font-size: 1.3em;
+}
+
+.button_submit{
+  background-color:#e7c24f;
+  font-size: 1.3em;
+}

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Work day or Holiday</title>
+  <meta name="description" content="Exercises">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style>
+  
+  h1, h4{
+    margin: 20px 20px 20px 20px;
+  }
+
+  table, th, tr, td{
+    border:1px solid black;
+    margin: 20px 20px 20px 20px;
+  }
+
+  button{
+    margin: 20px 20px 20px 20px;
+  }
+
+  </style>
+
+
+<script>
+
+
+// work holiday
+function work_holiday() {
+
+  
+// indetify the Month
+  var month;
+   switch (new Date().getMonth()) {
+    case 0:
+        month = "January";
+        break;
+    case 1:
+        month = "February";
+        break;
+    case 2:
+        month = "March";
+        break;
+    case 3:
+        month = "April";
+        break;
+    case 4:
+        month = "May";
+        break;
+    case 5:
+        month = "June";
+        break;
+    case 6:
+        month = "July";
+        break;
+    case 7:
+        month = "August"; 
+        break;
+    case 8:
+        month = "September";
+        break;
+    case 9:
+        month = "October"; 
+        break;
+    case 10:
+        month = "November"; 
+        break; 
+    case 11:
+        month = "December";                    
+   }
+  
+  document.getElementById('month_output').innerHTML = month;
+
+  
+  // identify the day of month
+  var day_number = new Date().getDate();
+
+  document.getElementById('day_number_output').innerHTML = day_number;
+
+
+  // identify the day of the week
+  var day;
+   switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6:
+        day = "Saturday";
+   }
+
+  document.getElementById('day_output').innerHTML = day;
+
+ // indentify if its normal day or holiday
+
+if (day_number == 1 && month == 'January' || day_number == 4 && month == 'July' || day_number == 25 && month == 'December'){
+    var holiday = "Sleep in";
+    document.getElementById('message_output').innerHTML = holiday;
+
+   }
+
+   else {
+    var normal = "Get up!";
+    document.getElementById('message_output').innerHTML = normal;
+
+   }
+
+
+} 
+
+
+
+</script>
+
+</head>
+
+<body>
+<!-- Content start here -->
+  
+  
+<!-- First Exercise -->
+
+<h1>Work day or Holiday</h1>
+<h4>Depend of the day you will receive a message</h4>
+
+ <table>
+  <tr>
+    <th>Month</th>
+    <th>Day</th>
+    <th>Day of the Week</th>
+    <th>Message</th>
+  </tr>
+  <tr>
+    <td><div id="month_output"></div></td>
+    <td><div id="day_number_output"></div></td>
+    <td><div id="day_output"></div></td>
+    <td><div id="message_output"></div></td>
+  </tr>
+</table> 
+
+
+  <button type="button" onclick="work_holiday()">Calculate Total</button>
+
+
+
+</body>
+
+</html>

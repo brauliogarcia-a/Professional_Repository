@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Assignment weather site for Braulio Garcia in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="css/large.css" />
+  <link rel="stylesheet" href="css/medium.css" />
+  <link rel="stylesheet" href="css/small.css" />
+  <script src="js/current_date.js"></script>
+  <script src="js/top_bar.js"></script>
+  <script src="js/windchill.js"></script>
+  <script src="js/mediaqueries.js"></script>
+  <script src="js/lazyloader.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+  <!-- The follwing two references were added as part of the assignment, nevertheless they don't work for some reason. That is why I used the traditional method.-->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/webfontload.js"></script>
+  <title>Course Portal Home Page - BG</title>
+</head>
+<body onload="hour(); getYear();">
+  <div id="bar_message"><div class="bar_wrapper"><p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p></div></div> 
+  <header>
+    <div class="wrapperHeader">
+      <div id="logo" class="imgContainer"><a href="https://braulio0790.github.io/braulio0790/lesson11/index.html"><img src="img/sunnycloud_logo.PNG" alt="logo of the sunny cloud site"></a></div>
+      <div class="textBesideLogo">
+       <h1>The SunnyCloud Site</h1>
+       <h2>All the weather in one channel</h2>
+      </div>
+    </div>
+
+     <nav class="headerNavigation">
+      <div class="headerWidth">
+       <button onclick="toggleMenu()">&#9776</button>
+       <ul id="display" class="hide">
+        <Li><a href="https://braulio0790.github.io/braulio0790/lesson11/index.html">Home</a></Li>
+        <Li><a href="https://braulio0790.github.io/braulio0790/lesson11/preston.html">Preston</a></Li>
+        <Li><a href="https://braulio0790.github.io/braulio0790/lesson11/sodaspring.html">Soda Springs</a></Li>
+        <Li><a href="https://braulio0790.github.io/braulio0790/lesson11/fishhaven.html">Fish Haven</a></Li>
+        <Li><a href="https://braulio0790.github.io/braulio0790/lesson11/stormcenter.html">Storm Center</a></Li>
+        <Li><a href="https://braulio0790.github.io/braulio0790/lesson11/gallery.html">Gallery</a></Li>
+       </ul>
+      </div>
+    </nav>
+  
+  </header>
+
+  <main>
+    <h1>Weather Gallery</h1>
+    
+   <div class="wrapper">
+    <figure class="one">
+      <img src='img/placeholder.png' data-src='img/1.jpg' alt='a random image'>
+      <figcaption>Fig.1 - Nice Pupy.</figcaption>
+    </figure>
+
+    <figure class="two">
+      <img src='img/placeholder.png' data-src='img/2.jpg' alt='a random image'>
+      <figcaption>Fig.1 - A Mountain.</figcaption>
+    </figure>
+
+    <figure class="three">
+      <img src='img/placeholder.png' data-src='img/3.jpg' alt='a random image'>
+      <figcaption>Fig.1 - Morsas.</figcaption>
+    </figure>
+
+    <figure class="four">
+      <img src='img/placeholder.png' data-src='img/4.jpg' alt='a random image'>
+      <figcaption>Fig.1 - Landscape.</figcaption>
+    </figure>
+
+    <figure class="five">
+      <img src='img/placeholder.png' data-src='img/5.jpeg' alt='a random image'>
+      <figcaption>Fig.1 - The Blue Orange.</figcaption>
+    </figure>
+
+    <figure class="six">
+      <img src='img/placeholder.png' data-src='img/6.jpg' alt='a random image'>
+      <figcaption>Fig.1 - Shapes.</figcaption>
+    </figure>
+  </div>
+  </main>
+
+  <footer>
+    <div class="footerContainer">
+      <a href="https://www.copyright.gov/help/faq/faq-general.html#:~:text=Copyright%2C%20a%20form%20of%20intellectual,%2C%20computer%20software%2C%20and%20architecture." target="_blank">&copy; <span id='yearC'></span></a>  &nbsp; | &nbsp;
+      <a href="https://www.linkedin.com/in/braulio-garc%C3%ADa-52785484/" target="_blank">Braulio Garcia</a>  &nbsp; | &nbsp;
+      <a href="https://guadalajara.gob.mx/" target="_blank">Guadalajara</a>  &nbsp; | &nbsp;
+      <a href="https://www.byui.edu/online" target="_blank">BYUi Online</a>  &nbsp; | &nbsp;
+    </div>
+    <div class="currentHourW"><span id="currentHour"></span></div>
+  </footer>
+</body>
+</html>  

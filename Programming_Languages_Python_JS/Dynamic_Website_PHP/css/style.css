@@ -1,0 +1,650 @@
+body {
+    background-image: url('/phpmotors/images/site/small_check.jpg');
+    font-family: 'Share Tech Mono', sans-serif;
+     margin: 0;
+  }
+
+/*General Message */
+.message p{
+color:#e30022;
+font-weight: bold;
+}
+
+/* header */
+header{
+  margin: 0 0 1em;
+}
+
+h1{
+  margin: 1em 0 1em 0;
+}
+
+#part_1 span{
+  float: right;
+  margin: 4.2em -6em 0 0;
+}
+
+table{
+  margin: 1em 0 0 0;
+}
+
+table, th, td {
+  border: 1px solid black;
+  text-align: left;
+}
+
+
+/* Account without login*/
+
+#account{
+  float: right;
+  margin: 0 2em 0 0;
+  display: inline;
+  z-index: 1;
+  position: relative;
+  padding: 0;
+}
+
+#account1 a:hover{
+  color: black;
+  background-color: transparent;
+  padding: 0;
+}
+
+#account p{
+  z-index: 1;
+}
+
+#account a{
+  color: black;
+  background-color: transparent;
+  z-index: 1;
+}
+
+#account a:hover{
+  color: black;
+  background-color: transparent;
+  padding: 0;
+  z-index: 1;
+}
+
+
+/* Account with login*/
+
+#account2{
+  float: right;
+  margin: 1em 2em 0 0;
+  display: inline;
+  z-index: 1;
+  position: relative;
+  padding: 0;
+}
+
+#account2 a:hover{
+  color: black;
+  background-color: transparent;
+  padding: 0;
+}
+
+#account2 p{
+  z-index: 1;
+}
+
+#account2 a{
+  color: black;
+  background-color: transparent;
+  z-index: 1;
+}
+
+#account2 a:hover{
+  color: black;
+  background-color: transparent;
+  padding: 0;
+  z-index: 1;
+}
+
+/* Search Bar */
+.search{
+  margin:0 -6em 0 0;
+  float: right;
+  width: 200px;
+  z-index: -1;
+}
+
+.search form{
+  display: inline;
+  float: right;
+  margin: 3em 0 0 0;
+  z-index: -1;
+}
+
+.search input[type=text] {
+  padding: 4px;
+  font-size: 1em;
+  border: none;
+  height: 20px;
+  width: 70%;
+  margin: 0 0 1em 0;
+  border: 1px solid black;
+  z-index: -1;
+}
+
+.search button {
+  width: 19%;
+  padding: 4px;
+  margin: 0 0 0 -8px;
+  background: #ddd;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  z-index: -1;
+}
+
+.search .search-container button:hover {
+  background: gray;
+}
+
+/* Search Bar2 */
+.search2{
+  margin:0 -9em 0 0;
+  float: right;
+  width: 200px;
+  z-index: -1;
+}
+
+.search2 form{
+  display: inline;
+  float: right;
+  margin: 3em 0 0 0;
+  z-index: -1;
+}
+
+.search2 input[type=text] {
+  padding: 4px;
+  font-size: 1em;
+  border: none;
+  height: 20px;
+  width: 70%;
+  margin: 0 0 1em 0;
+  border: 1px solid black;
+  z-index: -1;
+}
+
+.search2 button {
+  width: 19%;
+  padding: 4px;
+  margin: 0 0 0 -8px;
+  background: #ddd;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  z-index: -1;
+}
+
+.search2 .search-container button:hover {
+  background: gray;
+}
+
+/* Search bar in the search page*/
+#search-bar{
+  width: 50%;
+}
+
+#search-bar input[type=text] {
+  width: 80%;
+  padding: 4px;
+  font-size: 1.5em;
+  border: none;
+  height: 50px;
+  margin: 0 0 1em 0;
+  border: 1px solid black;
+  z-index: -1;
+}
+
+#search-bar button {
+  padding: 19px;
+  margin: 0 0 0 -8px;
+  background: #ddd;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  z-index: -1;
+}
+
+/* Pagination */
+#pagination-display{
+margin: 0;
+padding: 0;
+}
+
+#pagination-display li{
+  text-decoration: none;
+  display: inline;
+  padding: 10px;
+  margin: 4px;
+  background-color:#4c96d7;
+}
+
+#pagination-display a{
+  color: black;
+  background-color: transparent;
+  z-index: 1;
+}
+
+#pagination-display a:hover{
+  color: white;
+  background-color: transparent;
+  padding: 0;
+  z-index: 1;
+}
+
+
+/* General Rules */ 
+#wrapper{
+  width: 97%;
+  background-color: white;
+  margin: 0 auto;
+  border: 2px solid #4c96d7;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  background-color: #4c96d7;
+  padding: 1.1em;
+}
+
+label{
+  font-weight: bold;
+}
+
+/* Mega menu */
+#mega_menu{
+  background-color: #3a3a3a;
+}
+
+#mega_menu ul{
+  text-align: left;
+  padding: 1em 0 1em 1em;
+  margin: 0;
+}
+
+#mega_menu li{
+	display: inline;
+	color: #fff;
+  padding: 0;
+  margin: 0 1em 0 0;
+	text-decoration: none;
+	font-size: 1em;
+}
+
+#bannerh1{
+  margin: 1em 0 0 .5em;
+}
+
+#banner{
+  padding: 3em 0 0 3em;
+  width: 908px;
+}
+
+#banner img{
+  width: 908px;
+}
+
+#text-block {
+  position: absolute;
+  top: 11em;
+  left: 20px;
+  color: #5396d7;
+  padding: 2em;
+  width: 400px;
+}
+
+button{
+  background-color: #5396d7;
+  padding: .5em 2em .5em 2em;
+}
+
+/* content below the banner */
+
+main h2{
+  margin: 3em 0 1em 0;
+}
+
+#content_section{
+  display: flex;
+  padding: 1em;
+  column-gap: 2%;
+}
+
+#item_flexbox_1{
+  width: 50%;
+  order: -2;
+}
+       
+#item_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  column-gap: 2%;
+  row-gap: 2%;
+}
+
+#item_wrapper a{
+  color: black;
+  text-decoration: underline;
+}
+
+#item_wrapper img{
+  height: 50px;
+}
+
+.bluebox{
+  background-color:#4c96d7;
+  width: 45%;
+  height: 45%;
+}
+
+#item_flexbox_2{
+  width: 50%;
+  padding: 0 0 0 2em;
+  order: 1;
+}
+
+#item_flexbox_2 h2{
+  margin: 0;
+}
+
+#item_flexbox_2 li{
+  margin: 1em 0 0 0;
+}
+
+footer{
+  border-top: 4px solid #4f4d4e; 
+  text-align: center;
+  margin: 2em 0 0 0;
+}
+
+/** Login page **/
+#contentL{
+  margin: 0 0 0 2em;
+}
+
+input{
+  width: 300px;
+  height: 30px;
+}
+
+#button{
+  background-color:#4c96d7;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+/** Registration page **/
+#registerL{
+  margin: 2em 0 0 0;
+}
+
+#registerL a{
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#registerL a:hover{
+  color: black;
+  background-color: transparent;
+  padding: 0;
+}
+
+/** Vehicle management page**/
+
+#contentM{
+  margin: 2em 0 0 1em;
+}
+
+#contentM a{
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#contentM a:hover{
+  color: black;
+  background-color: transparent;
+  padding: 0;
+}
+
+/** Error 500 page **/
+
+#container500{
+  padding: 1em;
+}
+
+#container500 p{
+  padding: 1em;
+}
+
+/** Admin Page **/
+
+#link_level a{
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+  padding: 0;
+}
+
+#link_Level a:hover{
+  color: black;
+  background-color: transparent;
+  padding: 0;
+}
+
+/*Display the Vehicles */
+#inv-display{
+  padding: 0;
+  padding-inline-start: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.containerCar{
+  width: 300px;
+  border: 2px solid #3a3a3a;;
+  margin: 1em 1em 1em 0;
+  padding: 1em;
+  background-color: #ededed;
+}
+
+#inv-display li{
+  text-decoration: none;
+  display: inline;
+}
+
+.imageCar{
+  margin: 1em 0 1em 0;
+}
+
+.imageCar img{
+  width: 100%;
+}
+
+.containerCar h2{
+  padding: 0;
+  margin: 0 0 1em 0;
+}
+
+#inv-display li a{
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+  padding: 0;
+}
+
+#inv-display li a:hover{
+  color: black;
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Vehicle Details */ 
+#contentDetails{
+  display: flex;
+}
+
+#wrapperDetails{
+  width: 40%;
+}
+
+#wrapperDetails2{
+  width: 10%; 
+  margin: 4.2em 1em 0 1em;
+}
+
+#dataSpace{
+  background-color: #bfb8b8;
+}
+
+.SmallimageCar, .LargeimageCar{
+  display: block;
+  margin: 0 0 1em 0;
+}
+
+.LargeimageCar{
+  width: 100%;
+}
+
+.SmallimageCar{
+  margin: 2em 0 1em 0;
+  width: 100%;
+  transition: transform .2s; /* Animation */
+}
+
+.SmallimageCar:hover{
+  transform: scale(1.5);
+}
+
+/** Uploads **/
+#formUpload{
+  width: 20%;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pImage{
+  width: 20px;
+}
+
+#image-display{
+  padding: 0;
+  margin: 0;
+}
+
+#image-display li{
+  text-decoration: none;
+  display: inline;
+}
+
+#image-display a{
+  color: #39739d;
+  background-color: #e1ecf4;
+  padding: .5em;
+  box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+}
+
+#image-display a:hover{
+  color: black;
+  background-color: #008CBA;
+  box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+}
+
+
+/** Media Queries **/
+@media (max-width: 800px) {
+  body {
+    background-image: none;
+    font-family: 'Share Tech Mono', sans-serif;
+    margin: 0;
+    width: 100%;
+  }
+
+  .wrapper{
+    width: 100%;
+  }
+
+  #banner{
+    padding: 12em 0 0 0;
+  }
+
+  #banner img{
+    width: 100%;
+  }
+
+  #content_section{
+    display: block;
+    padding: 0;
+    column-gap: 2%;
+  }
+
+  #item_flexbox_1, #item_flexbox_2{
+    width: 100%;
+  }
+
+  #item_flexbox_1{
+    display: block;
+    order: 1;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  #item_flexbox_2{
+    display: block;
+    order: 1;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  #item_flexbox_1 li, #item_flexbox_1 h2, #item_flexbox_1 p{
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Vehicle Details */ 
+  #wrapperDetails{
+    width: 100%;
+  }
+
+  /* Details */
+  #contentDetails{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #wrapperDetails{
+    width: 100%;
+    order: 1;
+    flex-direction: row
+  }
+  
+  #wrapperDetails2{
+    width: 100%; 
+    order: 2;
+    flex-direction: row;
+    margin: 4.2em 1em 0 1em;
+  }
+
+  .SmallimageCar{
+    width: 100%;
+  }
+  
+  .SmallimageCar:hover{
+    transform: none;
+  }
+}

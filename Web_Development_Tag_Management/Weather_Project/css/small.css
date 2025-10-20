@@ -1,0 +1,120 @@
+@media (max-width: 600px) {
+
+#logo, .textBesideLogo{
+        margin: 0 auto;
+        align-content: center;
+        text-align: center;
+        display: block;
+}
+
+.hide{
+      display: none;
+  }
+
+  .headerWidth{
+      text-align: center;
+  }
+  
+  button{
+      display: inline;
+  }
+    
+  .headerWidth ul li{
+    display: block;
+    padding: 1em 0 1em 0;
+   }
+
+   .headerWidth ul{
+    text-align: center;
+}
+
+.banner{
+    height: 400px;
+}
+
+.text-block {
+    position: absolute;
+    top: 3em;
+    left: 20px;
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    padding: 2em;
+} 
+
+.text-block p{
+    font-size: 1.5em;
+}
+
+.text-block h3{
+    font-size: 2em !important;
+}
+
+.weekly_weather{
+    width: 400px;
+}
+
+th, td{
+    width: 80px;
+    padding: .5em;
+}
+
+
+.text-block {
+    padding: 1em;
+    font-size: .7em;
+  }
+
+.article{
+    display: block;
+    padding: 1em 0 0 0;
+}
+
+.article_img{
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+.map{
+    width:90%;
+    display: block;
+    margin: 0;
+    padding:0;
+ }
+
+.contact_info{
+    width: 100%;
+    display: block;
+    margin: 1em 0;
+    padding:0;
+}
+
+
+.towns section{
+    width: 95%;
+
+}
+
+/*preston page*/
+
+#imgR{
+    display: none;
+}
+
+#imgM{
+    display: none;
+}
+
+#imgS{
+    display: inline-block;
+}
+
+
+/* style for the gallery page */
+
+figure{
+    width: 100%;
+}
+
+}

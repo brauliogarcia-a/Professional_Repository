@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer a{
+    color: white;
+}
+
+h1{
+    color:white;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.prophetsI{
+    width:100%;
+    height:100%;
+}
+
+img{
+    width:100%;
+    height:100%;
+}
+
+ul{
+    text-align: center;
+    padding: 1em 0 1em 0;
+}
+
+li{
+    padding: 0 0 1em 0;
+    list-style: none;
+}
+
+.mainWrapper{
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #d1d5da;
+}
+
+header{
+    background-color:#2f363d;
+
+}
+
+footer{
+    background-color:#2f363d;
+    color: white;
+    padding: 1em;
+}
+
+.footerContainer{
+    padding: 1em;
+}
+
+#currentHour{
+    padding: 1em 0 0 1em;
+}
+
+
+/* Wireframe style */
+
+.wrapperW{
+   width: 70%;
+   margin: 0 auto;
+}
+
+.container{
+    margin: 2em;
+}
+
+.icon{
+    width: 30px;
+    display: inline-block;
+}
+
+span{
+    display: inline-block;
+}
+
+p{
+    display: inline-block;
+}

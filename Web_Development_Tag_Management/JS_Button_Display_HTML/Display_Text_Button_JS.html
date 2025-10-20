@@ -1,0 +1,65 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Gold Card Game</title>
+<meta name="description" content="Exercises">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<style>
+h1, h4{
+margin: 20px 20px 20px 20px;
+}
+
+table, th, tr, td{
+border:1px solid black;
+margin: 20px 20px 20px 20px;
+}
+
+button{
+margin: 20px 20px 20px 20px;
+}
+</style>
+
+<script>
+
+function display(){
+
+    document.getElementById('total_output').innerHTML = makeLocation("Rexburg","Idaho","83440");
+}
+
+function makeLocation(city, state, zipcode){
+
+    var result = city+", "+state+" "+zipcode;
+
+	return result;
+}
+</script>
+
+</head>
+
+<body>
+<!-- Content start here -->
+
+
+<!-- First Exercise -->
+
+<h1>Array</h1>
+
+<table>
+<tr>
+<th>Result</th>
+</tr>
+<tr>
+<td><div id="total_output"></div></td>
+</tr>
+</table>
+
+<button type="button" onclick="display()">Get hand score</button>
+
+</body>
+
+</html>

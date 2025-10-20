@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Assignment weather site for Braulio Garcia in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="css/large.css" />
+  <link rel="stylesheet" href="css/medium.css" />
+  <link rel="stylesheet" href="css/small.css" />
+  <script src="js/current_date.js"></script>
+  <script src="js/towns.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+  <title>Course Portal Home Page - BG</title>
+</head>
+<body onload="getYear();">
+  <header>
+    <div class="wrapperHeader">
+      <div id="logo" class="imgContainer"><a href="https://braulio0790.github.io/braulio0790/lesson11/index.html"><img src="img/sunnycloud_logo.PNG" alt="logo of the sunny cloud site"></a></div>
+      <div class="textBesideLogo">
+       <h1>The SunnyCloud Site</h1>
+       <h2>All the weather in one channel</h2>
+      </div>
+    </div>
+
+     <nav class="headerNavigation">
+      <div class="headerWidth">
+       <button onclick="toggleMenu()">&#9776</button>
+       <ul id="display" class="hide">
+        <Li><a href="https://braulio0790.github.io/braulio0790/lesson11/index.html">Home</a></Li>
+        <Li><a href="https://braulio0790.github.io/braulio0790/lesson11/preston.html">Preston</a></Li>
+        <Li><a href="https://braulio0790.github.io/braulio0790/lesson11/sodaspring.html">Soda Springs</a></Li>
+        <Li><a href="https://braulio0790.github.io/braulio0790/lesson11/fishhaven.html">Fish Haven</a></Li>
+        <Li><a href="https://braulio0790.github.io/braulio0790/lesson11/stormcenter.html">Storm Center</a></Li>
+        <Li><a href="https://braulio0790.github.io/braulio0790/lesson11/gallery.html">Gallery</a></Li>
+       </ul>
+      </div>
+    </nav>
+  
+  </header>
+  <main>
+    <div class="banner">
+      <img src="img/banner.jpg" alt="a picture of a land scape with people on bikes">
+      <div class="text-block">
+        <h3>No Matter The Weather As Long As You Are Prepared</h3>
+        <p>
+          <strong>The weather stats in your zone</strong><br><br>
+          <strong>Currently:</strong> Sunny<br>
+          <strong>High:</strong> 76F°<br>
+          <strong>Wind Chill:</strong> "F<br>
+          <strong>Humidity:</strong> 69%<br>
+          <strong>Wind Speed:</strong> 5mph<br>
+        </p>
+       </div>
+      </div>
+    </div>
+
+    <section class="Wrappert">
+      <div class="towns"></div>
+    </section>
+
+    <section class="forecast">
+      <h3>Week Forecast</h3>
+      <div class="weekly_weather">     
+        <table>
+            <tbody><tr>
+                <th>
+                   Wed
+                </th>
+                <th>
+                    Thu
+                </th>
+                <th>
+                    Fry
+                </th>
+                <th>
+                    Sat
+                </th>
+                <th>
+                    Sun
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    89°F
+                </td>
+                <td>
+                    87°F
+                </td>
+                <td>
+                    78°F
+                </td>
+                <td>
+                    75°F
+                </td>
+                <td>
+                    72°F
+                </td>
+            </tr>
+        </tbody></table>  
+    </div>
+    </section>
+
+    <section class="article">
+      
+      <p><strong>It's a beautiful day</strong><br>
+        by Oprah<br><br>
+        Today I'm inside. At work. It's a beautiful spring day -- one of the most perfect yet! -- and I'm looking longingly out my window at the lovely patch of green grass lying on the other side of the glass. 
+        There is a stout tree positioned directly in front of my window and if I close my eyes I can imagine myself out there, leaning up against it, my nose bury deep in a great book. 
+        If I really delve into the depths of my imagination, I can almost feel those little bits of green grass brushing up against my legs and I can almost feel the slight breeze on my skin, the very same breeze I can see gently pushing through the air right now... </p>
+        <div class="article_img"><img src="img/beautiful.jpg" alt="article photo"></div>  
+    </section>
+
+    <section class="location">
+      <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d933.3035454072432!2d-103.42325039490282!3d20.66086351525654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae9e6ddbb2a9%3A0x52fb0158aa4789cd!2sTemplo%20de%20Guadalajara%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2smx!4v1615143998247!5m2!1ses-419!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="contact_info">
+        <p>
+         Address: Av. Patria #879, Col.Jardines del Tepeyac, Zapopan, Mexico<br><br>
+         Phone: 33-36-49-39-97<br><br>
+         Email: contactus@sunnycloud.com<br><br>
+        </p>
+        <div class="social"><img src="img/facebook.png" alt="facebook icon"></div>
+        <div class="social"><img src="img/twitter.png" alt="twitter icon"></div>
+      </div>
+    
+    </section>
+
+  </main> <!-- end of main -->
+
+
+  <footer>
+    <div class="footerContainer">
+      <a href="https://www.copyright.gov/help/faq/faq-general.html#:~:text=Copyright%2C%20a%20form%20of%20intellectual,%2C%20computer%20software%2C%20and%20architecture." target="_blank">&copy; <span id='yearC'></span></a>  &nbsp; | &nbsp;
+      <a href="https://www.linkedin.com/in/braulio-garc%C3%ADa-52785484/" target="_blank">Braulio Garcia</a>  &nbsp; | &nbsp;
+      <a href="https://guadalajara.gob.mx/" target="_blank">Guadalajara</a>  &nbsp; | &nbsp;
+      <a href="https://www.byui.edu/online" target="_blank">BYUi Online</a>  &nbsp; | &nbsp;
+    </div>
+    <div class="currentHourW"><span id="currentHour"></span></div>
+  </footer>
+</body>
+</html>  
