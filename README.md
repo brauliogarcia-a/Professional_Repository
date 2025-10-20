@@ -10,9 +10,13 @@ My work bridges data, technology, and storytelling—connecting business goals w
 # My Focus Areas
 
 Web & Digital Analytics (Google Analytics, Adobe Analytics, GTM, GCP)
+
 Data Visualization (Power BI, Tableau, Google Data Studio)
+
 SQL, Python, and Data Transformation (Databricks, PySpark)
+
 Tagging Implementation & Governance
+
 Dashboard Automation & Reporting
 
 # Currently Learning
