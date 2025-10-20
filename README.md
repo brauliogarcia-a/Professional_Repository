@@ -27,5 +27,6 @@ Machine Learning for BI
 API integration for automated data extraction and reporting
 
 # Contact
-LinkedIn: https://linkedin.com/in/brauliogarciaa
+LinkedIn: https://www.linkedin.com/in/brauliogarciagonzalez/
+
 Email: brauliogarcia.analytics@gmail.com
