@@ -21,7 +21,9 @@ Dashboard Automation & Reporting
 
 # Currently Learning
 Advanced Cloud Data Engineering (AWS, Snowflake, dbt)
+
 Machine Learning for BI
+
 API integration for automated data extraction and reporting
 
 # Contact
