@@ -13,7 +13,7 @@ Web & Digital Analytics (Google Analytics, Adobe Analytics, GTM, GCP)
 
 Data Visualization (Power BI, Tableau, Google Data Studio)
 
-SQL, Python, and Data Transformation (Databricks, PySpark)
+SQL, Python, and Data Transformation
 
 Tagging Implementation & Governance
 
