@@ -7,7 +7,7 @@ Purpose: This python script is going to create a database, create some tables ba
 
 [Software Demo Video](https://youtu.be/HrdJaU-uSnQ)
 
-# Relational Database
+# Cloud Database
 
 The database motor that I used for this project is MySQL but on AWS.
 
