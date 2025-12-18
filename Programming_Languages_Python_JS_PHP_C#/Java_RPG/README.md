@@ -20,8 +20,6 @@ Languages:
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
 - [Java SDK](https://www.oracle.com/java/technologies/downloads/)
 - [Java W3 School](https://www.w3schools.com/java/default.asp)
 - [Java SDK Documentation](https://docs.oracle.com/en/java/javase/21/)
@@ -30,8 +28,6 @@ Languages:
 - [How to make an RPG game](https://fpsvogel.com/posts/2023/why-make-a-text-based-game)
 
 # Future Work
-
-{Make a list of things that you need to fix, improve, and add in the future.}
 
 - Extend the story
 - Add more personages
