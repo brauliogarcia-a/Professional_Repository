@@ -1,0 +1,35 @@
+@page "/myorders/{OrderId:int}"
+@inject HttpClient HttpClient
+
+<h3>Order Detail</h3>
+
+@if (order == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <h4>Order #@order.OrderId</h4>
+
+    @foreach (var pizza in order.Pizzas)
+    {
+        <div style="margin-bottom:10px;">
+            <strong>@pizza.Size" @pizza.Special.Name</strong>
+            <div>$@pizza.GetFormattedTotalPrice()</div>
+        </div>
+    }
+
+    <hr />
+    <strong>Total: $@order.GetFormattedTotalPrice()</strong>
+}
+
+@code {
+    [Parameter] public int OrderId { get; set; }
+
+    Order order;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        order = await HttpClient.GetFromJsonAsync<Order>($"orders/{OrderId}");
+    }
+}

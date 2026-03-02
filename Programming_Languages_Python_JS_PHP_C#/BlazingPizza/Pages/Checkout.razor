@@ -1,0 +1,36 @@
+@page "/checkout"
+@inject OrderState OrderState
+@inject HttpClient HttpClient
+@inject NavigationManager NavigationManager
+
+<h3>Checkout</h3>
+
+<div>
+    @foreach (var pizza in Order.Pizzas)
+    {
+        <p>
+            <strong>
+                @(pizza.Size)" @pizza.Special.Name
+                ($@pizza.GetFormattedTotalPrice())
+            </strong>
+        </p>
+    }
+
+    <p>
+        <strong>Total price: $@Order.GetFormattedTotalPrice()</strong>
+    </p>
+</div>
+
+<button class="btn btn-warning" @onclick="PlaceOrder">Place order</button>
+
+@code {
+    Order Order => OrderState.Order;
+
+    async Task PlaceOrder()
+    {
+        var response = await HttpClient.PostAsJsonAsync("orders", OrderState.Order);
+        var newOrderId = await response.Content.ReadFromJsonAsync<int>();
+        OrderState.ResetOrder();
+        NavigationManager.NavigateTo("/");
+    }
+}

@@ -1,0 +1,29 @@
+@inherits LayoutComponentBase
+
+<header class="top-bar">
+    <a class="logo" href="">
+        <img src="img/logo.svg" />
+    </a>
+
+    <NavLink href="" class="nav-tab" Match="NavLinkMatch.All">
+        <img src="img/pizza-slice.svg" />
+        <div>Get Pizza</div>
+    </NavLink>
+
+    <NavLink href="checkout" class="nav-tab">
+        <div>Checkout</div>
+    </NavLink>
+
+    <NavLink href="myorders" class="nav-tab">
+        <div>My Orders</div>
+    </NavLink>
+</header>
+
+<div class="content" style="min-height: 70vh;">
+    @Body
+</div>
+
+<footer style="margin-top:20px;">
+    © Blazing Pizza @DateTime.UtcNow.Year <br />
+    Braulio Garcia Gonzalez - Mexico
+</footer>
