@@ -1,0 +1,180 @@
+@page "/connectfour"
+
+<h1>Connect Four</h1>
+
+<p>Current Player: <b>@currentPlayer</b></p>
+
+@* If someone wins, show a message *@
+@if(gameOver)
+{
+    <h2>@winner wins!</h2>
+}
+
+<button @onclick="ResetGame">Reset Game</button>
+
+<br />
+<br />
+
+<div class="board">
+
+@* Loop that creates the 42 spaces of the board *@
+@for (int i = 0; i < 42; i++)
+{
+    int column = i % 7;
+
+    @* Each cell represents a board position *@
+    <div class="cell @board[i]" @onclick="(() => DropPiece(column))"></div>
+}
+
+</div>
+
+<br />
+
+<h3>Move History</h3>
+
+@* If there are no moves yet *@
+@if(moves.Count == 0)
+{
+    <p>No moves yet</p>
+}
+else
+{
+    <ul>
+        @* Show every move stored in the list *@
+        @foreach(var move in moves)
+        {
+            <li>@move</li>
+        }
+    </ul>
+}
+
+@code{
+
+// This array represents the board (7 columns × 6 rows = 42 spaces)
+// Each space stores "empty", "red", or "yellow"
+string[] board = new string[42];
+
+// Tracks whose turn it is
+string currentPlayer = "red";
+
+// Stores the history of moves
+List<string> moves = new List<string>();
+
+// Indicates if the game already ended
+bool gameOver = false;
+
+// Stores the winner color
+string winner = "";
+
+// Runs when the page loads
+protected override void OnInitialized()
+{
+    ResetGame();
+}
+
+// Drops a piece into the selected column
+void DropPiece(int column)
+{
+    // If the game already finished, do nothing
+    if(gameOver)
+        return;
+
+    // Start from the bottom row
+    for(int row = 5; row >= 0; row--)
+    {
+        int index = row * 7 + column;
+
+        // If the space is empty, place the piece
+        if(board[index] == "empty")
+        {
+            board[index] = currentPlayer;
+
+            // Save move history
+            moves.Add($"{currentPlayer} played column {column + 1}");
+
+            // Check if the current player won
+            if(CheckWinner())
+            {
+                gameOver = true;
+                winner = currentPlayer;
+                return;
+            }
+
+            // Switch player
+            if(currentPlayer == "red")
+                currentPlayer = "yellow";
+            else
+                currentPlayer = "red";
+
+            break;
+        }
+    }
+}
+
+// Reset the game
+void ResetGame()
+{
+    for(int i = 0; i < board.Length; i++)
+    {
+        board[i] = "empty";
+    }
+
+    moves.Clear();
+
+    currentPlayer = "red";
+
+    gameOver = false;
+    winner = "";
+}
+
+// Function that checks if someone connected four pieces
+bool CheckWinner()
+{
+    int rows = 6;
+    int cols = 7;
+
+    for(int r = 0; r < rows; r++)
+    {
+        for(int c = 0; c < cols; c++)
+        {
+            int index = r * cols + c;
+
+            if(board[index] == "empty")
+                continue;
+
+            string player = board[index];
+
+            // Check horizontal
+            if(c <= cols - 4 &&
+               player == board[r * cols + c + 1] &&
+               player == board[r * cols + c + 2] &&
+               player == board[r * cols + c + 3])
+                return true;
+
+            // Check vertical
+            if(r <= rows - 4 &&
+               player == board[(r+1) * cols + c] &&
+               player == board[(r+2) * cols + c] &&
+               player == board[(r+3) * cols + c])
+                return true;
+
+            // Check diagonal \
+            if(r <= rows - 4 && c <= cols - 4 &&
+               player == board[(r+1)*cols + c+1] &&
+               player == board[(r+2)*cols + c+2] &&
+               player == board[(r+3)*cols + c+3])
+                return true;
+
+            // Check diagonal /
+            if(r >= 3 && c <= cols - 4 &&
+               player == board[(r-1)*cols + c+1] &&
+               player == board[(r-2)*cols + c+2] &&
+               player == board[(r-3)*cols + c+3])
+                return true;
+        }
+    }
+
+    return false;
+}
+
+}

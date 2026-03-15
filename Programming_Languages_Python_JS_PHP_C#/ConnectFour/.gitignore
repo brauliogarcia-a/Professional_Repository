@@ -1,0 +1,60 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+packages/
+.nuget/
+
+# Test results
+TestResults/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Node (sometimes used in Blazor projects)
+node_modules/
+
+# Publish output
+publish/
+
+# Temporary files
+*.tmp
+*.temp
+
+# dotnet watch
+.dotnet/
+
+# Coverage
+coverage/
+
+# Backup files
+*.bak
+*.backup
+
+# Windows file history
+$RECYCLE.BIN/
+
+# JetBrains Rider
+*.sln.iml
