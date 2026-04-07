@@ -1,0 +1,14 @@
+{
+  "name": "pokemon-library",
+  "version": "1.0.0",
+  "description": "Student style final project for WDD330",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.3"
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Library | Home</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="module" src="/js/main.js"></script>
+  </head>
+
+
+  <body>
+    <!-- Header -->
+    <header id="main-header"></header>
+
+    <!-- Content -->
+    <main class="container">
+
+      <!-- Title and Search -->
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Pokemon API Search</p>
+          <h1>Pokemon Library</h1>
+          <p>
+            Search Pokemon, filter by type, open details, and save your favorite
+            ones in your own small library.
+          </p>
+          <form id="searchForm" class="search-form">
+            <input id="searchInput" type="text" placeholder="Search by name. Example: pikachu" />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+
+        <!-- Description -->
+        <div class="hero-card">
+          <h2>About the Site</h2>
+          <ul>
+            <li>Search Pokemon Information</li>
+            <li>Shows a list of Pokemon</li>
+            <li>Lets the user filter by type</li>
+            <li>Shows main battle information</li>
+            <li>Saves favorites</li>
+          </ul>
+        </div>
+      </section>
+
+     <!-- Pre-filters -->
+      <section class="type-section">
+        <h2>Browse by type</h2>
+        <div id="typeButtons" class="type-buttons"></div>
+      </section>
+
+      <!-- Quick Links -->
+      <section  class="type-section">
+        <h2>Quick Links</h2>
+        <div class="home-links">
+          <a class="home-card" href="/pokemon-list/index.html">Open Pokemon List</a>
+          <a class="home-card" href="/favorites/index.html">Open Favorites</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer"></footer>
+  </body>
+</html>

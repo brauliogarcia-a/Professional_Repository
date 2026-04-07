@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Library | List</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="module" src="/js/pokemon-list-page.js"></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="main-header"></header>
+
+    <!-- Content -->
+    <main class="container">
+
+      <!-- Search -->
+      <section class="page-top">
+        <h1>Pokemon List</h1>
+        <form id="searchForm" class="search-form">
+          <input id="searchInput" type="text" placeholder="Search by name" />
+          <button type="submit">Search</button>
+        </form>
+      </section>
+
+      <!-- Filters -->
+      <section class="controls">
+        <div>
+          <label for="typeFilter">Filter by type:</label>
+          <select id="typeFilter">
+            <option value="all">All</option>
+          </select>
+        </div>
+        <div>
+          <label for="sortPokemon">Sort by:</label>
+          <select id="sortPokemon">
+            <option value="default">Default</option>
+            <option value="name-asc">Name A-Z</option>
+            <option value="name-desc">Name Z-A</option>
+            <option value="id-asc">Pokedex number low-high</option>
+            <option value="id-desc">Pokedex number high-low</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Results List -->
+      <p id="resultsMessage" class="results-message"></p>
+      <ul id="pokemonList" class="pokemon-grid"></ul>
+    </main>
+    
+    <!-- Footer -->
+    <footer id="main-footer"></footer>
+  </body>
+</html>
