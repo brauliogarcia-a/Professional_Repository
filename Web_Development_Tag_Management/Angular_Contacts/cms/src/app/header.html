@@ -1,17 +1,36 @@
+<!-- This creates the main navigation bar. -->
 <nav class="navbar navbar-default">
+
+  <!-- This keeps the navbar content inside a fluid container. -->
   <div class="container-fluid">
+
+    <!-- This section contains the name or brand of the application. -->
     <div class="navbar-header">
+
+      <!-- This is the application title shown on the navbar. -->
       <a class="navbar-brand" href="#">WeLearn CMS</a>
     </div>
 
+    <!-- This list contains the main navigation options. -->
     <ul class="nav navbar-nav">
-      <li><a href="#">Documents</a></li>
-      <li><a href="#">Messages</a></li>
-      <li><a href="#">Contacts</a></li>
+
+      <!-- When the user clicks Documents, it calls onSelected() and sends "documents". -->
+      <li><a href="#" (click)="onSelected('documents')">Documents</a></li>
+
+      <!-- When the user clicks Messages, it calls onSelected() and sends "messages". -->
+      <li><a href="#" (click)="onSelected('messages')">Messages</a></li>
+
+      <!-- When the user clicks Contacts, it calls onSelected() and sends "contacts". -->
+      <li><a href="#" (click)="onSelected('contacts')">Contacts</a></li>
     </ul>
 
+    <!-- This list is aligned to the right side of the navbar. -->
     <ul class="nav navbar-nav navbar-right">
+
+      <!-- This creates a dropdown area for the user menu. -->
       <li class="dropdown">
+
+        <!-- This is the user dropdown link shown in the navbar. -->
         <a href="#" class="dropdown-toggle">
           User <span class="caret"></span>
         </a>

@@ -1,20 +1,40 @@
+<!-- This panel contains the contact list section. -->
 <div class="panel panel-default">
+
+  <!-- This is the header of the contacts panel. -->
   <div class="panel-heading clearfix">
+
+    <!-- This is the title of the panel, shown on the left side. -->
     <h3 class="panel-title pull-left">Contacts</h3>
+
+    <!-- This button is shown on the right side to create a new contact. -->
     <a class="btn btn-success pull-right">New Contact</a>
   </div>
 
+  <!-- This is the main body of the panel. -->
   <div class="panel-body">
+
+    <!-- This repeats one list item for each contact in the contacts array. -->
+    <!-- When the user clicks a contact, it calls onSelected() and sends that contact. -->
     <a
       class="list-group-item clearfix"
       *ngFor="let contact of contacts"
       style="cursor: pointer;"
+      (click)="onSelected(contact)"
     >
+
+      <!-- This section shows the contact name on the left side. -->
       <div class="pull-left">
+
+        <!-- This displays the name of the current contact. -->
         <h4 class="list-group-item-heading">{{ contact.name }}</h4>
       </div>
 
+      <!-- This section shows the contact image on the right side. -->
       <span class="pull-right">
+
+        <!-- This displays the contact image using the imageUrl value. -->
+        <!-- The alt text uses the contact name for accessibility. -->
         <img
           [src]="contact.imageUrl"
           alt="{{ contact.name }}"

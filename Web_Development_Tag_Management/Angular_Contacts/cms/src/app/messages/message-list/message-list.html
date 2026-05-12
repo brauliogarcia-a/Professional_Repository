@@ -1,0 +1,35 @@
+<!-- This row organizes the messages page layout. -->
+<div class="row">
+
+  <!-- This column holds the message list and the message edit form. -->
+  <div class="col-md-5">
+
+    <!-- This panel contains the messages section. -->
+    <div class="panel panel-default">
+
+      <!-- This is the header of the messages panel. -->
+      <div class="panel-heading">
+
+        <!-- This is the title of the panel. -->
+        <h3 class="panel-title">Messages</h3>
+      </div>
+
+      <!-- This is the main body of the messages panel. -->
+      <div class="panel-body">
+
+        <!-- This repeats one message item for each message in the messages array. -->
+        <!-- [message] sends the current message from this parent component to the child component. -->
+        <cms-message-item
+          *ngFor="let message of messages"
+          [message]="message"
+        ></cms-message-item>
+      </div>
+    </div>
+
+    <!-- This shows the message edit component. -->
+    <!-- addMessageEvent listens when a new message is created in the child component. -->
+    <!-- When the event happens, it calls onAddMessage() and sends the new message. -->
+    <cms-message-edit (addMessageEvent)="onAddMessage($event)"></cms-message-edit>
+  </div>
+
+</div>

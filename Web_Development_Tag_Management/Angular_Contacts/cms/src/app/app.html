@@ -1,5 +1,18 @@
-<cms-header></cms-header>
+<!-- This shows the header component at the top of the page. -->
+<!-- selectedFeatureEvent listens for the option selected in the header. -->
+<!-- When the event happens, it calls switchView() and sends the selected value. -->
+<cms-header (selectedFeatureEvent)="switchView($event)"></cms-header>
 
+<!-- This container holds the main content of the page. -->
 <div class="container">
-  <cms-contacts></cms-contacts>
+
+  <!-- Show the Documents component only when selectedFeature is documents. -->
+  <cms-documents *ngIf="selectedFeature === 'documents'"></cms-documents>
+
+  <!-- Show the Messages component only when selectedFeature is messages. -->
+  <cms-messages *ngIf="selectedFeature === 'messages'"></cms-messages>
+
+  <!-- Show the Contacts component only when selectedFeature is contacts. -->
+  <cms-contacts *ngIf="selectedFeature === 'contacts'"></cms-contacts>
+
 </div>

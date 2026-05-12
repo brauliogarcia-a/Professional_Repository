@@ -1,0 +1,22 @@
+<!-- This panel shows the details of the selected document. -->
+<!-- *ngIf checks if there is a document selected before showing the panel. -->
+<!-- "document as selectedDocument" gives the document a local name to use in this template. -->
+<div class="panel panel-default" *ngIf="document as selectedDocument">
+
+  <!-- This is the header of the document detail panel. -->
+  <div class="panel-heading clearfix">
+
+    <!-- This shows the selected document name on the left side. -->
+    <h3 class="panel-title pull-left">{{ selectedDocument.name }}</h3>
+  </div>
+
+  <!-- This is the main body of the document detail panel. -->
+  <div class="panel-body">
+
+    <!-- This shows the description of the selected document. -->
+    <p>{{ selectedDocument.description }}</p>
+
+    <!-- This shows the URL of the selected document. -->
+    <p><strong>URL:</strong> {{ selectedDocument.url }}</p>
+  </div>
+</div>

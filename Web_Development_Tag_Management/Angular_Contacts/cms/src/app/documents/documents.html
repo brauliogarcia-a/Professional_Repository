@@ -1,0 +1,21 @@
+<!-- This row organizes the documents page into columns. -->
+<div class="row">
+
+  <!-- This column shows the document list on the left side. -->
+  <div class="col-md-5">
+
+    <!-- This shows the document list component. -->
+    <!-- selectedDocumentEvent listens when a document is selected in the child component. -->
+    <!-- When a document is selected, it calls onSelectedDocument() and sends the selected document. -->
+    <cms-document-list (selectedDocumentEvent)="onSelectedDocument($event)"></cms-document-list>
+  </div>
+
+  <!-- This column shows the selected document details on the right side. -->
+  <div class="col-md-4">
+
+    <!-- This shows the document detail component. -->
+    <!-- [document] sends the selectedDocument data from this parent component to the child component. -->
+    <cms-document-detail [document]="selectedDocument"></cms-document-detail>
+  </div>
+
+</div>

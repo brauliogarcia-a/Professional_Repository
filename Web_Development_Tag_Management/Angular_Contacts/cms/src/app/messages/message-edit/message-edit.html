@@ -1,0 +1,63 @@
+<!-- This panel contains the form to create a new message. -->
+<div class="panel panel-default">
+
+  <!-- This form holds the input fields for the message. -->
+  <form class="panel-body">
+
+    <!-- This section groups the message edit form content. -->
+    <div class="document-edit">
+
+      <!-- This form group is for the subject input. -->
+      <div class="form-group">
+
+        <!-- This label is connected to the subject input. -->
+        <label for="subject">Subject</label>
+
+        <!-- This input lets the user type the message subject. -->
+        <!-- #subjectInput creates a template reference variable. -->
+        <!-- Angular can use this reference in the TypeScript file with @ViewChild. -->
+        <input
+          type="text"
+          id="subject"
+          class="form-control"
+          size="120"
+          max="120"
+          #subjectInput
+        />
+      </div>
+
+      <!-- This form group is for the message text input. -->
+      <div class="form-group">
+
+        <!-- This label is connected to the message text input. -->
+        <label for="msgText">Message</label>
+
+        <!-- This input lets the user type the message content. -->
+        <!-- #msgTextInput creates a template reference variable. -->
+        <!-- Angular can use this reference in the TypeScript file with @ViewChild. -->
+        <input
+          type="text"
+          id="msgText"
+          class="form-control"
+          size="120"
+          max="120"
+          #msgTextInput
+        />
+      </div>
+
+      <!-- This row organizes the form buttons. -->
+      <div class="row">
+
+        <!-- This column holds the Send and Clear buttons. -->
+        <div class="col-xs-12">
+
+          <!-- This button calls onSendMessage() to create and send the new message. -->
+          <button class="btn btn-success" type="button" (click)="onSendMessage()">Send</button>
+
+          <!-- This button calls onClear() to clean the input fields. -->
+          <button class="btn btn-danger" type="button" (click)="onClear()">Clear</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

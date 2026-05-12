@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Contacts } from './contacts';
+import { ContactList } from './contact-list/contact-list';
+import { ContactDetail } from './contact-detail/contact-detail';
 
 describe('Contacts', () => {
   let component: Contacts;
@@ -8,7 +10,7 @@ describe('Contacts', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [Contacts],
+      declarations: [Contacts, ContactList, ContactDetail],
     }).compileComponents();
 
     fixture = TestBed.createComponent(Contacts);

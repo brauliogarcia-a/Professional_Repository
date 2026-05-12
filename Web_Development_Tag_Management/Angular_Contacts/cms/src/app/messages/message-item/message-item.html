@@ -1,0 +1,14 @@
+<!-- This shows one message item only if a message exists. -->
+<!-- "message as currentMessage" gives the message a local name to use in this template. -->
+<a class="list-group-item" *ngIf="message as currentMessage">
+
+  <!-- This section holds the message header information. -->
+  <div class="messageHeader">
+
+    <!-- This shows the sender of the current message. -->
+    <span class="messageSender">{{ currentMessage.sender }}</span>
+  </div>
+
+  <!-- This shows the main text of the current message. -->
+  <div class="messageText">{{ currentMessage.msgText }}</div>
+</a>

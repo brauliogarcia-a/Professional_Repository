@@ -1,9 +1,21 @@
+<!-- This row organizes the contact page into columns. -->
 <div class="row">
+
+  <!-- This column shows the contact list on the left side. -->
   <div class="col-md-5">
-    <cms-contact-list></cms-contact-list>
+
+    <!-- This shows the contact list component. -->
+    <!-- selectedContactEvent listens when a contact is selected in the child component. -->
+    <!-- When a contact is selected, it calls onSelectedContact() and sends the selected contact. -->
+    <cms-contact-list (selectedContactEvent)="onSelectedContact($event)"></cms-contact-list>
   </div>
 
+  <!-- This column shows the selected contact details on the right side. -->
   <div class="col-md-4">
-    <cms-contact-detail></cms-contact-detail>
+
+    <!-- This shows the contact detail component. -->
+    <!-- [contact] sends the selectedContact data from this parent component to the child component. -->
+    <cms-contact-detail [contact]="selectedContact"></cms-contact-detail>
   </div>
+
 </div>

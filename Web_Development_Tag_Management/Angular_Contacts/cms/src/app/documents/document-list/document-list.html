@@ -1,0 +1,33 @@
+<!-- This panel contains the document list section. -->
+<div class="panel panel-default">
+
+  <!-- This is the header of the documents panel. -->
+  <div class="panel-heading clearfix">
+
+    <!-- This is the title of the panel, shown on the left side. -->
+    <h3 class="panel-title pull-left">Documents</h3>
+
+    <!-- This button is shown on the right side to add a new document. -->
+    <a class="btn btn-success pull-right">Add Document</a>
+  </div>
+
+  <!-- This is the main body of the panel. -->
+  <div class="panel-body">
+
+    <!-- This repeats one list item for each document in the documents array. -->
+    <!-- When the user clicks a document, it calls onSelected() and sends that document. -->
+    <a
+      class="list-group-item clearfix"
+      *ngFor="let document of documents"
+      style="cursor: pointer;"
+      (click)="onSelected(document)"
+    >
+
+      <!-- This displays the name of the current document. -->
+      <h4 class="list-group-item-heading">{{ document.name }}</h4>
+
+      <!-- This displays the description of the current document. -->
+      <p class="list-group-item-text">{{ document.description }}</p>
+    </a>
+  </div>
+</div>
