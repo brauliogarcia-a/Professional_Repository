@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fpp3oLHJaRo=",
+  "dgSpecHash": "FQEa6K32s3I=",
   "success": true,
-  "projectFilePath": "E:\\Documents\\1.School\\One_Drive_BYUI\\OneDrive - BYU-Idaho\\CSE 325\\Week 4\\Project\\MvMovie\\MvMovie.csproj",
+  "projectFilePath": "E:\\Documents\\1.School\\BYUI\\22 Semester\\CSE 310\\Github\\Professional_Portfolio\\Programming_Languages_Python_JS_PHP_C#\\MvMovie\\MvMovie.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Braulio\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\Braulio\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",
@@ -136,5 +136,30 @@
     "C:\\Users\\Braulio\\.nuget\\packages\\system.security.cryptography.pkcs\\9.0.4\\system.security.cryptography.pkcs.9.0.4.nupkg.sha512",
     "C:\\Users\\Braulio\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.6\\system.security.cryptography.protecteddata.9.0.6.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1901",
+      "level": "Warning",
+      "message": "Package 'NuGet.Packaging' 6.12.1 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
+      "projectPath": "E:\\Documents\\1.School\\BYUI\\22 Semester\\CSE 310\\Github\\Professional_Portfolio\\Programming_Languages_Python_JS_PHP_C#\\MvMovie\\MvMovie.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\Documents\\1.School\\BYUI\\22 Semester\\CSE 310\\Github\\Professional_Portfolio\\Programming_Languages_Python_JS_PHP_C#\\MvMovie\\MvMovie.csproj",
+      "libraryId": "NuGet.Packaging",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1901",
+      "level": "Warning",
+      "message": "Package 'NuGet.Protocol' 6.12.1 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
+      "projectPath": "E:\\Documents\\1.School\\BYUI\\22 Semester\\CSE 310\\Github\\Professional_Portfolio\\Programming_Languages_Python_JS_PHP_C#\\MvMovie\\MvMovie.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\Documents\\1.School\\BYUI\\22 Semester\\CSE 310\\Github\\Professional_Portfolio\\Programming_Languages_Python_JS_PHP_C#\\MvMovie\\MvMovie.csproj",
+      "libraryId": "NuGet.Protocol",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

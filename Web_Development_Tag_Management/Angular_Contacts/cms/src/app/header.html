@@ -28,12 +28,19 @@
     <ul class="nav navbar-nav navbar-right">
 
       <!-- This creates a dropdown area for the user menu. -->
-      <li class="dropdown">
+      <!-- cmsDropdown uses the custom directive to open and close this dropdown. -->
+      <li class="dropdown" cmsDropdown>
 
         <!-- This is the user dropdown link shown in the navbar. -->
-        <a href="#" class="dropdown-toggle">
+        <a href="#" class="dropdown-toggle" role="button">
           User <span class="caret"></span>
         </a>
+
+        <!-- This is the menu that appears when the dropdown is open. -->
+        <ul class="dropdown-menu">
+          <li><a href="#">Save Data</a></li>
+          <li><a href="#">Fetch Data</a></li>
+        </ul>
       </li>
     </ul>
   </div>

@@ -19,61 +19,61 @@ build_property.TargetFrameworkIdentifier = .NETCoreApp
 build_property.TargetFrameworkVersion = v10.0
 build_property.RootNamespace = MvMovie
 build_property.RootNamespace = MvMovie
-build_property.ProjectDir = E:\Documents\1.School\One_Drive_BYUI\OneDrive - BYU-Idaho\CSE 325\Week 4\Project\MvMovie\
+build_property.ProjectDir = E:\Documents\1.School\BYUI\22 Semester\CSE 310\Github\Professional_Portfolio\Programming_Languages_Python_JS_PHP_C#\MvMovie\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\Documents\1.School\One_Drive_BYUI\OneDrive - BYU-Idaho\CSE 325\Week 4\Project\MvMovie
+build_property.MSBuildProjectDirectory = E:\Documents\1.School\BYUI\22 Semester\CSE 310\Github\Professional_Portfolio\Programming_Languages_Python_JS_PHP_C#\MvMovie
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[E:/Documents/1.School/One_Drive_BYUI/OneDrive - BYU-Idaho/CSE 325/Week 4/Project/MvMovie/Views/Home/Index.cshtml]
+[E:/Documents/1.School/BYUI/22 Semester/CSE 310/Github/Professional_Portfolio/Programming_Languages_Python_JS_PHP_C\#/MvMovie/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Documents/1.School/One_Drive_BYUI/OneDrive - BYU-Idaho/CSE 325/Week 4/Project/MvMovie/Views/Home/Privacy.cshtml]
+[E:/Documents/1.School/BYUI/22 Semester/CSE 310/Github/Professional_Portfolio/Programming_Languages_Python_JS_PHP_C\#/MvMovie/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Documents/1.School/One_Drive_BYUI/OneDrive - BYU-Idaho/CSE 325/Week 4/Project/MvMovie/Views/Movies/Create.cshtml]
+[E:/Documents/1.School/BYUI/22 Semester/CSE 310/Github/Professional_Portfolio/Programming_Languages_Python_JS_PHP_C\#/MvMovie/Views/Movies/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Documents/1.School/One_Drive_BYUI/OneDrive - BYU-Idaho/CSE 325/Week 4/Project/MvMovie/Views/Movies/Delete.cshtml]
+[E:/Documents/1.School/BYUI/22 Semester/CSE 310/Github/Professional_Portfolio/Programming_Languages_Python_JS_PHP_C\#/MvMovie/Views/Movies/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Documents/1.School/One_Drive_BYUI/OneDrive - BYU-Idaho/CSE 325/Week 4/Project/MvMovie/Views/Movies/Details.cshtml]
+[E:/Documents/1.School/BYUI/22 Semester/CSE 310/Github/Professional_Portfolio/Programming_Languages_Python_JS_PHP_C\#/MvMovie/Views/Movies/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Documents/1.School/One_Drive_BYUI/OneDrive - BYU-Idaho/CSE 325/Week 4/Project/MvMovie/Views/Movies/Edit.cshtml]
+[E:/Documents/1.School/BYUI/22 Semester/CSE 310/Github/Professional_Portfolio/Programming_Languages_Python_JS_PHP_C\#/MvMovie/Views/Movies/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Documents/1.School/One_Drive_BYUI/OneDrive - BYU-Idaho/CSE 325/Week 4/Project/MvMovie/Views/Movies/Index.cshtml]
+[E:/Documents/1.School/BYUI/22 Semester/CSE 310/Github/Professional_Portfolio/Programming_Languages_Python_JS_PHP_C\#/MvMovie/Views/Movies/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Documents/1.School/One_Drive_BYUI/OneDrive - BYU-Idaho/CSE 325/Week 4/Project/MvMovie/Views/Shared/Error.cshtml]
+[E:/Documents/1.School/BYUI/22 Semester/CSE 310/Github/Professional_Portfolio/Programming_Languages_Python_JS_PHP_C\#/MvMovie/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Documents/1.School/One_Drive_BYUI/OneDrive - BYU-Idaho/CSE 325/Week 4/Project/MvMovie/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/Documents/1.School/BYUI/22 Semester/CSE 310/Github/Professional_Portfolio/Programming_Languages_Python_JS_PHP_C\#/MvMovie/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Documents/1.School/One_Drive_BYUI/OneDrive - BYU-Idaho/CSE 325/Week 4/Project/MvMovie/Views/_ViewImports.cshtml]
+[E:/Documents/1.School/BYUI/22 Semester/CSE 310/Github/Professional_Portfolio/Programming_Languages_Python_JS_PHP_C\#/MvMovie/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Documents/1.School/One_Drive_BYUI/OneDrive - BYU-Idaho/CSE 325/Week 4/Project/MvMovie/Views/_ViewStart.cshtml]
+[E:/Documents/1.School/BYUI/22 Semester/CSE 310/Github/Professional_Portfolio/Programming_Languages_Python_JS_PHP_C\#/MvMovie/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Documents/1.School/One_Drive_BYUI/OneDrive - BYU-Idaho/CSE 325/Week 4/Project/MvMovie/Views/Shared/_Layout.cshtml]
+[E:/Documents/1.School/BYUI/22 Semester/CSE 310/Github/Professional_Portfolio/Programming_Languages_Python_JS_PHP_C\#/MvMovie/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-qvexhe5hh5

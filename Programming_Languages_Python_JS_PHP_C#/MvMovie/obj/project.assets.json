@@ -6458,11 +6458,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Documents\\1.School\\One_Drive_BYUI\\OneDrive - BYU-Idaho\\CSE 325\\Week 4\\Project\\MvMovie\\MvMovie.csproj",
+      "projectUniqueName": "E:\\Documents\\1.School\\BYUI\\22 Semester\\CSE 310\\Github\\Professional_Portfolio\\Programming_Languages_Python_JS_PHP_C#\\MvMovie\\MvMovie.csproj",
       "projectName": "MvMovie",
-      "projectPath": "E:\\Documents\\1.School\\One_Drive_BYUI\\OneDrive - BYU-Idaho\\CSE 325\\Week 4\\Project\\MvMovie\\MvMovie.csproj",
+      "projectPath": "E:\\Documents\\1.School\\BYUI\\22 Semester\\CSE 310\\Github\\Professional_Portfolio\\Programming_Languages_Python_JS_PHP_C#\\MvMovie\\MvMovie.csproj",
       "packagesPath": "C:\\Users\\Braulio\\.nuget\\packages\\",
-      "outputPath": "E:\\Documents\\1.School\\One_Drive_BYUI\\OneDrive - BYU-Idaho\\CSE 325\\Week 4\\Project\\MvMovie\\obj\\",
+      "outputPath": "E:\\Documents\\1.School\\BYUI\\22 Semester\\CSE 310\\Github\\Professional_Portfolio\\Programming_Languages_Python_JS_PHP_C#\\MvMovie\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Braulio\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -6471,6 +6471,7 @@
         "net10.0"
       ],
       "sources": {
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6533,7 +6534,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.108/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -6950,5 +6951,27 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1901",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'NuGet.Packaging' 6.12.1 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
+      "libraryId": "NuGet.Packaging",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1901",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'NuGet.Protocol' 6.12.1 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
+      "libraryId": "NuGet.Protocol",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

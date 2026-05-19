@@ -14,8 +14,13 @@
   <div class="col-md-4">
 
     <!-- This shows the document detail component. -->
+    <!-- This shows the document detail component only after the user selects a document. -->
+    <!-- *ngIf prevents an empty detail panel from showing before a document is selected. -->
     <!-- [document] sends the selectedDocument data from this parent component to the child component. -->
-    <cms-document-detail [document]="selectedDocument"></cms-document-detail>
+    <cms-document-detail
+      *ngIf="selectedDocument"
+      [document]="selectedDocument"
+    ></cms-document-detail>
   </div>
 
 </div>

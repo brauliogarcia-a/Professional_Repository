@@ -27,30 +27,62 @@ export class DocumentList {
   @Output() selectedDocumentEvent = new EventEmitter<Document>();
 
   // This array stores the list of documents that will be shown on the page.
+  // This array stores a dummy list of documents that will be shown on the page.
   // Each item is created using the Document model.
+  // Each item is created using the Document model with id, name, description, url, and children.
   documents: Document[] = [
     // This creates the first document with id, name, description, url, and children.
+    // This creates the first test document.
     new Document(
       '1',
-      'Weekly Assignment',
-      'Instructions and requirements for the weekly assignment.',
-      'https://byui.edu',
+      'Angular Notes',
+      'Notes about Angular components, data binding, and component communication.',
+      'https://angular.dev',
       null
     ),
 
     // This creates the second document with id, name, description, url, and children.
+    // This creates the second test document.
     new Document(
       '2',
-      'Course Notes',
-      'Notes about Angular components and data binding.',
+      'Weekly Assignment',
+      'Instructions and requirements for the week 04 assignment.',
       'https://byui.edu',
+      null
+    ),
+
+    // This creates the third test document.
+    new Document(
+      '3',
+      'Project Plan',
+      'A simple plan for organizing the CMS project files and features.',
+      'https://github.com',
+      null
+    ),
+
+    // This creates the fourth test document.
+    new Document(
+      '4',
+      'Team Meeting Notes',
+      'Notes from a team meeting about documents, messages, and contacts.',
+      'https://docs.google.com',
+      null
+    ),
+
+    // This creates the fifth test document.
+    new Document(
+      '5',
+      'Final Checklist',
+      'A checklist to review the project before submitting the GitHub and video links.',
+      'https://canvas.instructure.com',
       null
     ),
   ];
 
   // This method runs when the user selects a document.
-  onSelected(document: Document): void {
+  onSelectedDocument(document: Document): void {
     // This sends the selected document to the parent component.
+    // This sends the selected document to the parent Documents component.
     this.selectedDocumentEvent.emit(document);
   }
 }
