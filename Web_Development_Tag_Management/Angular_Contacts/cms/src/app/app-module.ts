@@ -17,6 +17,7 @@ import { Header } from './header';
 // These components are related to the Contacts section.
 import { Contacts } from './contacts/contacts';
 import { ContactList } from './contacts/contact-list/contact-list';
+import { ContactItem } from './contacts/contact-item/contact-item';
 import { ContactDetail } from './contacts/contact-detail/contact-detail';
 
 // These components are related to the Documents section.
@@ -42,6 +43,7 @@ import { DropdownDirective } from './dropdown.directive';
     Header,
     Contacts,
     ContactList,
+    ContactItem,
     ContactDetail,
     Documents,
     DocumentList,

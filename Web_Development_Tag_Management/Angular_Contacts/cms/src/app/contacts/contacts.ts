@@ -1,10 +1,13 @@
-// This imports Component from Angular.
-// Component is needed to create an Angular component.
-import { Component } from '@angular/core';
+// This imports the Angular tools needed to create a component and use the OnInit lifecycle method.
+import { Component, OnInit } from '@angular/core';
 
 // This imports the Contact model.
 // The model defines the structure of a contact object.
 import { Contact } from './contact.model';
+
+// This imports the ContactService.
+// The service lets this component listen when a contact is selected.
+import { ContactService } from './contact.service';
 
 // This decorator tells Angular that this class is a component.
 @Component({
@@ -22,14 +25,20 @@ import { Contact } from './contact.model';
 })
 
 // This is the Contacts component class.
-export class Contacts {
+export class Contacts implements OnInit {
   // This variable keeps track of the contact selected by the user.
   // It starts as null because no contact is selected at the beginning.
   selectedContact: Contact | null = null;
 
-  // This method runs when a contact is selected from the contact list.
-  onSelectedContact(contact: Contact): void {
-    // Save the selected contact in the selectedContact variable.
-    this.selectedContact = contact;
+  // The constructor injects the ContactService into this component.
+  constructor(private contactService: ContactService) {}
+
+  // ngOnInit runs when Angular finishes creating this component.
+  ngOnInit(): void {
+    // Listen for the selected contact event from the service.
+    this.contactService.contactSelectedEvent.subscribe((contact: Contact) => {
+      // Save the selected contact so the detail component can display it.
+      this.selectedContact = contact;
+    });
   }
 }

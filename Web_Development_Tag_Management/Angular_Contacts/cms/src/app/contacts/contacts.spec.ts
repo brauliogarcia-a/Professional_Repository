@@ -7,6 +7,9 @@ import { Contacts } from './contacts';
 // This imports the child component used inside the Contacts component.
 import { ContactList } from './contact-list/contact-list';
 
+// This imports the child component used to show one contact in the contact list.
+import { ContactItem } from './contact-item/contact-item';
+
 // This imports the child component used to show the selected contact details.
 import { ContactDetail } from './contact-detail/contact-detail';
 
@@ -22,7 +25,7 @@ describe('Contacts', () => {
   beforeEach(async () => {
     // This configures the testing module with the component and its child components.
     await TestBed.configureTestingModule({
-      declarations: [Contacts, ContactList, ContactDetail],
+      declarations: [Contacts, ContactList, ContactItem, ContactDetail],
     }).compileComponents();
 
     // This creates the Contacts component for testing.

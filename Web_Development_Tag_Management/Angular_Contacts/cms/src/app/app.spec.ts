@@ -10,6 +10,7 @@ import { App } from './app';
 import { Header } from './header';
 import { Contacts } from './contacts/contacts';
 import { ContactList } from './contacts/contact-list/contact-list';
+import { ContactItem } from './contacts/contact-item/contact-item';
 import { ContactDetail } from './contacts/contact-detail/contact-detail';
 import { Documents } from './documents/documents';
 import { DocumentList } from './documents/document-list/document-list';
@@ -34,6 +35,7 @@ describe('App', () => {
         Header,
         Contacts,
         ContactList,
+        ContactItem,
         ContactDetail,
         Documents,
         DocumentList,

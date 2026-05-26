@@ -27,9 +27,8 @@
     </div>
 
     <!-- This shows the message edit component. -->
-    <!-- addMessageEvent listens when a new message is created in the child component. -->
-    <!-- When the event happens, it calls onAddMessage() and sends the new message. -->
-    <cms-message-edit (addMessageEvent)="onAddMessage($event)"></cms-message-edit>
+    <!-- New messages are now saved through MessageService instead of an Output event here. -->
+    <cms-message-edit></cms-message-edit>
   </div>
 
 </div>

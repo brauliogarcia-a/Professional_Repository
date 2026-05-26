@@ -1,0 +1,23 @@
+<!-- This anchor works as one clickable contact card in the contact list. -->
+<a class="list-group-item clearfix contactDiv" style="cursor: pointer;">
+
+  <!-- This section shows the contact name on the left side. -->
+  <div class="pull-left">
+
+    <!-- This displays the name of the current contact. -->
+    <h4 class="list-group-item-heading">{{ contact.name }}</h4>
+  </div>
+
+  <!-- This section shows the contact image on the right side. -->
+  <span class="pull-right">
+
+    <!-- This displays the contact image using the imageUrl value. -->
+    <!-- The alt text uses the contact name for accessibility. -->
+    <img
+      [src]="contact.imageUrl"
+      alt="{{ contact.name }}"
+      class="img-responsive"
+      style="max-height: 50px;"
+    />
+  </span>
+</a>

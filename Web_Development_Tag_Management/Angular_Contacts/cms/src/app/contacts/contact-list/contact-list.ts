@@ -1,9 +1,13 @@
-// This imports the Angular tools needed to create a component and send events.
-import { Component, EventEmitter, Output } from '@angular/core';
+// This imports the Angular tools needed to create a component and use the OnInit lifecycle method.
+import { Component, OnInit } from '@angular/core';
 
 // This imports the Contact model.
 // The model defines what information each contact should have.
 import { Contact } from '../contact.model';
+
+// This imports the ContactService.
+// The service stores the contacts and shares contact events between components.
+import { ContactService } from '../contact.service';
 
 // This decorator tells Angular that this class is a component.
 @Component({
@@ -21,38 +25,24 @@ import { Contact } from '../contact.model';
 })
 
 // This is the ContactList component class.
-export class ContactList {
-  // @Output lets this child component send information to the parent component.
-  // selectedContactEvent will send the contact selected by the user.
-  @Output() selectedContactEvent = new EventEmitter<Contact>();
-
+export class ContactList implements OnInit {
   // This array stores the list of contacts that will be shown on the page.
-  // Each item is created using the Contact model.
-  contacts: Contact[] = [
-    // This creates the first contact with id, name, email, phone, image, and group.
-    new Contact(
-      '1',
-      'R. Kent Jackson',
-      'jacksonk@byui.edu',
-      '208-496-3771',
-      'assets/images/jacksonk.jpg',
-      null
-    ),
+  // It starts empty because the data now comes from the ContactService.
+  contacts: Contact[] = [];
 
-    // This creates the second contact with id, name, email, phone, image, and group.
-    new Contact(
-      '2',
-      'Rex Barzee',
-      'barzeer@byui.edu',
-      '208-496-3768',
-      'assets/images/barzeer.jpg',
-      null
-    )
-  ];
+  // The constructor injects the ContactService into this component.
+  constructor(private contactService: ContactService) {}
+
+  // ngOnInit runs when Angular finishes creating this component.
+  ngOnInit(): void {
+    // Get the contacts from the service and save them in this component.
+    this.contacts = this.contactService.getContacts();
+  }
 
   // This method runs when the user selects a contact.
   onSelected(contact: Contact): void {
-    // This sends the selected contact to the parent component.
-    this.selectedContactEvent.emit(contact);
+    // This sends the selected contact through the service event.
+    // Other components can listen to this event without using parent-child output binding.
+    this.contactService.contactSelectedEvent.emit(contact);
   }
 }

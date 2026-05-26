@@ -1,0 +1,4 @@
+/* This makes each contact item use the full width of the list. */
+.contactDiv {
+  width: 100%;
+}

@@ -1,10 +1,13 @@
-// This imports Component from Angular.
-// Component is needed to create an Angular component.
-import { Component } from '@angular/core';
+// This imports the Angular tools needed to create a component and use the OnInit lifecycle method.
+import { Component, OnInit } from '@angular/core';
 
 // This imports the Document model.
 // The model defines the structure of a document object.
 import { Document } from './document.model';
+
+// This imports the DocumentService.
+// The service lets this component listen when a document is selected.
+import { DocumentService } from './document.service';
 
 // This decorator tells Angular that this class is a component.
 @Component({
@@ -22,14 +25,20 @@ import { Document } from './document.model';
 })
 
 // This is the Documents component class.
-export class Documents {
+export class Documents implements OnInit {
   // This variable keeps track of the document selected by the user.
   // It starts as null because no document is selected at the beginning.
   selectedDocument: Document | null = null;
 
-  // This method runs when a document is selected from the document list.
-  onSelectedDocument(document: Document): void {
-    // Save the selected document in the selectedDocument variable.
-    this.selectedDocument = document;
+  // The constructor injects the DocumentService into this component.
+  constructor(private documentService: DocumentService) {}
+
+  // ngOnInit runs when Angular finishes creating this component.
+  ngOnInit(): void {
+    // Listen for the selected document event from the service.
+    this.documentService.documentSelectedEvent.subscribe((document: Document) => {
+      // Save the selected document so the detail component can display it.
+      this.selectedDocument = document;
+    });
   }
 }

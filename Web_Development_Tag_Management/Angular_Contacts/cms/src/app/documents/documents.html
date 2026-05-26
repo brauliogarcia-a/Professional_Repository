@@ -5,15 +5,13 @@
   <div class="col-md-5">
 
     <!-- This shows the document list component. -->
-    <!-- selectedDocumentEvent listens when a document is selected in the child component. -->
-    <!-- When a document is selected, it calls onSelectedDocument() and sends the selected document. -->
-    <cms-document-list (selectedDocumentEvent)="onSelectedDocument($event)"></cms-document-list>
+    <!-- The selected document is now sent through DocumentService instead of an Output event here. -->
+    <cms-document-list></cms-document-list>
   </div>
 
   <!-- This column shows the selected document details on the right side. -->
   <div class="col-md-4">
 
-    <!-- This shows the document detail component. -->
     <!-- This shows the document detail component only after the user selects a document. -->
     <!-- *ngIf prevents an empty detail panel from showing before a document is selected. -->
     <!-- [document] sends the selectedDocument data from this parent component to the child component. -->

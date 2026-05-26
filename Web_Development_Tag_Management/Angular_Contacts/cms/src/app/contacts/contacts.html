@@ -5,9 +5,8 @@
   <div class="col-md-5">
 
     <!-- This shows the contact list component. -->
-    <!-- selectedContactEvent listens when a contact is selected in the child component. -->
-    <!-- When a contact is selected, it calls onSelectedContact() and sends the selected contact. -->
-    <cms-contact-list (selectedContactEvent)="onSelectedContact($event)"></cms-contact-list>
+    <!-- The selected contact is now sent through ContactService instead of an Output event here. -->
+    <cms-contact-list></cms-contact-list>
   </div>
 
   <!-- This column shows the selected contact details on the right side. -->

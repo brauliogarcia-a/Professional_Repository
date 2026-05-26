@@ -11,15 +11,16 @@ export class Document {
     // This is the name or title of the document.
     public name: string,
 
-    // This is the description of the document.
-    public description: string,
-
     // This is the URL or link for the document.
     public url: string,
 
+    // This is the description of the document.
+    // The mock documents do not always have a description, so this is optional.
+    public description?: string,
+
     // This stores child documents if this document has any.
-    // It can also be null if the document does not have children.
-    public children: Document[] | null
+    // It can also be undefined if the document does not have children.
+    public children?: Document[]
 
   ) {}
 }

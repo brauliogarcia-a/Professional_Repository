@@ -14,34 +14,12 @@
   <!-- This is the main body of the panel. -->
   <div class="panel-body">
 
-    <!-- This repeats one list item for each contact in the contacts array. -->
-    <!-- When the user clicks a contact, it calls onSelected() and sends that contact. -->
-    <a
-      class="list-group-item clearfix"
+    <!-- This repeats one contact item component for each contact in the contacts array. -->
+    <!-- The list still controls the selected contact event. -->
+    <cms-contact-item
       *ngFor="let contact of contacts"
-      style="cursor: pointer;"
+      [contact]="contact"
       (click)="onSelected(contact)"
-    >
-
-      <!-- This section shows the contact name on the left side. -->
-      <div class="pull-left">
-
-        <!-- This displays the name of the current contact. -->
-        <h4 class="list-group-item-heading">{{ contact.name }}</h4>
-      </div>
-
-      <!-- This section shows the contact image on the right side. -->
-      <span class="pull-right">
-
-        <!-- This displays the contact image using the imageUrl value. -->
-        <!-- The alt text uses the contact name for accessibility. -->
-        <img
-          [src]="contact.imageUrl"
-          alt="{{ contact.name }}"
-          class="img-responsive"
-          style="max-height: 50px;"
-        />
-      </span>
-    </a>
+    ></cms-contact-item>
   </div>
 </div>

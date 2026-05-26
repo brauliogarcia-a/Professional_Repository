@@ -1,10 +1,13 @@
-// This imports Component from Angular.
-// Component is needed to create an Angular component.
-import { Component } from '@angular/core';
+// This imports the Angular tools needed to create a component and use the OnInit lifecycle method.
+import { Component, OnInit } from '@angular/core';
 
 // This imports the Message model.
 // The model defines what information each message should have.
 import { Message } from '../message.model';
+
+// This imports the MessageService.
+// The service stores the messages and tells this component when the list changes.
+import { MessageService } from '../message.service';
 
 // This decorator tells Angular that this class is a component.
 @Component({
@@ -22,47 +25,23 @@ import { Message } from '../message.model';
 })
 
 // This is the MessageList component class.
-export class MessageList {
+export class MessageList implements OnInit {
   // This array stores the list of messages that will be shown on the page.
-  // Each item is created using the Message model.
-  messages: Message[] = [
-    // This creates the first message with id, subject, message text, and sender.
-    new Message(
-      '1',
-      'Assignment posted',
-      'The grades for this assignment have been posted',
-      'Bro. Jackson'
-    ),
+  // It starts empty because the data now comes from the MessageService.
+  messages: Message[] = [];
 
-    // This creates the second message.
-    new Message(
-      '2',
-      'Assignment due',
-      'When is assignment 3 due',
-      'Steve Johnson'
-    ),
+  // The constructor injects the MessageService into this component.
+  constructor(private messageService: MessageService) {}
 
-    // This creates the third message.
-    new Message(
-      '3',
-      'Need help',
-      'Can I meet with you sometime. I need help with assignment 3',
-      'Mark Smith'
-    ),
+  // ngOnInit runs when Angular finishes creating this component.
+  ngOnInit(): void {
+    // Get the first copy of the messages from the service.
+    this.messages = this.messageService.getMessages();
 
-    // This creates the fourth message.
-    new Message(
-      '4',
-      'Meeting',
-      'I can meet with you today at 4:00 PM in my office.',
-      'Bro. Jackson'
-    ),
-  ];
-
-  // This method runs when a new message is created.
-  onAddMessage(message: Message): void {
-    // This adds the new message to the messages array.
-    // After this, the message can be shown in the message list.
-    this.messages.push(message);
+    // Listen for changes in the message list.
+    this.messageService.messageChangedEvent.subscribe((messages: Message[]) => {
+      // Save the new copy of the messages so the page refreshes.
+      this.messages = messages;
+    });
   }
 }
