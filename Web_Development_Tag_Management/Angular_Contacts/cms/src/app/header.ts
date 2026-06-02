@@ -1,5 +1,6 @@
-// This imports the tools needed to create a component and send events to a parent component.
-import { Component, EventEmitter, Output } from '@angular/core';
+// This imports Component from Angular.
+// Component is used to create an Angular component.
+import { Component } from '@angular/core';
 
 // This decorator tells Angular that this class is a component.
 @Component({
@@ -18,14 +19,6 @@ import { Component, EventEmitter, Output } from '@angular/core';
 
 // This is the Header component class.
 export class Header {
-  // @Output lets this child component send information to the parent component.
-  // selectedFeatureEvent will send the selected section as a string.
-  @Output() selectedFeatureEvent = new EventEmitter<string>();
-
-  // This method runs when the user selects a section in the header.
-  onSelected(selectedFeature: string): void {
-    // This sends the selected section to the parent component.
-    // For example: documents, messages, or contacts.
-    this.selectedFeatureEvent.emit(selectedFeature);
-  }
+  // The Header component does not need to send events to App anymore.
+  // The links in the HTML now use Angular Router to change the page.
 }

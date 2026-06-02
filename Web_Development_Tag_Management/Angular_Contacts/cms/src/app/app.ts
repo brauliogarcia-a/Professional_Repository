@@ -23,14 +23,6 @@ import { Component } from '@angular/core';
 
 // This is the main App component class.
 export class App {
-  // This variable keeps track of the section currently selected.
-  // The default section is documents.
-  selectedFeature = 'documents';
-
-  // This method changes the current view when the user selects another section.
-  // For example, it can switch from documents to messages or contacts.
-  switchView(selectedFeature: string): void {
-    // Save the selected section in the selectedFeature variable.
-    this.selectedFeature = selectedFeature;
-  }
+  // The App component does not need to manually switch views anymore.
+  // The Angular Router now decides which main component should be displayed.
 }

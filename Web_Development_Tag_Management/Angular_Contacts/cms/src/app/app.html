@@ -1,18 +1,12 @@
 <!-- This shows the header component at the top of the page. -->
-<!-- selectedFeatureEvent listens for the option selected in the header. -->
-<!-- When the event happens, it calls switchView() and sends the selected value. -->
-<cms-header (selectedFeatureEvent)="switchView($event)"></cms-header>
+<!-- The header now uses routerLink to move between the main sections. -->
+<cms-header></cms-header>
 
 <!-- This container holds the main content of the page. -->
 <div class="container">
 
-  <!-- Show the Documents component only when selectedFeature is documents. -->
-  <cms-documents *ngIf="selectedFeature === 'documents'"></cms-documents>
-
-  <!-- Show the Messages component only when selectedFeature is messages. -->
-  <cms-messages *ngIf="selectedFeature === 'messages'"></cms-messages>
-
-  <!-- Show the Contacts component only when selectedFeature is contacts. -->
-  <cms-contacts *ngIf="selectedFeature === 'contacts'"></cms-contacts>
+  <!-- router-outlet is where Angular shows the component for the current route. -->
+  <!-- For example: /documents shows Documents, /messages shows Messages, and /contacts shows Contacts. -->
+  <router-outlet></router-outlet>
 
 </div>

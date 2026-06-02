@@ -35,6 +35,10 @@ import { MessageEdit } from './messages/message-edit/message-edit';
 // This directive is used to open and close the User dropdown menu.
 import { DropdownDirective } from './dropdown.directive';
 
+// This imports the routing module for the application.
+// The routing module controls which main component is shown for each URL.
+import { AppRoutingModule } from './app-routing.module';
+
 // This decorator tells Angular that AppModule is an Angular module.
 @NgModule({
   // Declarations are the components that belong to this module.
@@ -58,7 +62,8 @@ import { DropdownDirective } from './dropdown.directive';
 
   // Imports are other modules that this module needs.
   // BrowserModule allows the app to run in a web browser.
-  imports: [BrowserModule],
+  // AppRoutingModule allows the app to use Angular routing.
+  imports: [BrowserModule, AppRoutingModule],
 
   // Providers are services or features available to the app.
   // This one helps handle global browser errors.

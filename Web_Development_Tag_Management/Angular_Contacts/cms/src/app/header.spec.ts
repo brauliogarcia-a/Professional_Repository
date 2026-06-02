@@ -1,8 +1,14 @@
 // This imports the Angular testing tools needed to test a component.
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+// This imports RouterModule so the test understands routerLink.
+import { RouterModule } from '@angular/router';
+
 // This imports the Header component that we want to test.
 import { Header } from './header';
+
+// This imports the dropdown directive used inside the Header template.
+import { DropdownDirective } from './dropdown.directive';
 
 // This creates a test group for the Header component.
 describe('Header', () => {
@@ -17,8 +23,11 @@ describe('Header', () => {
   beforeEach(async () => {
     // This sets up the testing module for the Header component.
     await TestBed.configureTestingModule({
-      // This declares the Header component for the test.
-      declarations: [Header],
+      // This declares the Header component and the directive it uses.
+      declarations: [Header, DropdownDirective],
+
+      // This imports RouterModule so routerLink works during the test.
+      imports: [RouterModule.forRoot([])],
     }).compileComponents();
 
     // This creates a test version of the Header component.

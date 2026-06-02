@@ -8,20 +8,24 @@
     <div class="navbar-header">
 
       <!-- This is the application title shown on the navbar. -->
-      <a class="navbar-brand" href="#">WeLearn CMS</a>
+      <!-- routerLink sends the user to the documents route when they click the title. -->
+      <a class="navbar-brand" routerLink="/documents">WeLearn CMS</a>
     </div>
 
     <!-- This list contains the main navigation options. -->
     <ul class="nav navbar-nav">
 
-      <!-- When the user clicks Documents, it calls onSelected() and sends "documents". -->
-      <li><a href="#" (click)="onSelected('documents')">Documents</a></li>
+      <!-- routerLink changes the URL and shows the Documents component. -->
+      <!-- routerLinkActive adds the active class when this route is selected. -->
+      <li routerLinkActive="active"><a routerLink="/documents">Documents</a></li>
 
-      <!-- When the user clicks Messages, it calls onSelected() and sends "messages". -->
-      <li><a href="#" (click)="onSelected('messages')">Messages</a></li>
+      <!-- routerLink changes the URL and shows the Messages component. -->
+      <!-- routerLinkActive adds the active class when this route is selected. -->
+      <li routerLinkActive="active"><a routerLink="/messages">Messages</a></li>
 
-      <!-- When the user clicks Contacts, it calls onSelected() and sends "contacts". -->
-      <li><a href="#" (click)="onSelected('contacts')">Contacts</a></li>
+      <!-- routerLink changes the URL and shows the Contacts component. -->
+      <!-- routerLinkActive adds the active class when this route is selected. -->
+      <li routerLinkActive="active"><a routerLink="/contacts">Contacts</a></li>
     </ul>
 
     <!-- This list is aligned to the right side of the navbar. -->
