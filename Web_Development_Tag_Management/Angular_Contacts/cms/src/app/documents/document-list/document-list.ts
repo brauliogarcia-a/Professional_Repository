@@ -1,5 +1,9 @@
-// This imports the Angular tools needed to create a component and use the OnInit lifecycle method.
-import { Component, OnInit } from '@angular/core';
+// This imports the Angular tools needed to create a component and use lifecycle methods.
+import { Component, OnDestroy, OnInit } from '@angular/core';
+
+// This imports Subscription from rxjs.
+// It lets us unsubscribe before this component is destroyed.
+import { Subscription } from 'rxjs';
 
 // This imports the Document model.
 // The model defines what information each document should have.
@@ -25,10 +29,13 @@ import { DocumentService } from '../document.service';
 })
 
 // This is the DocumentList component class.
-export class DocumentList implements OnInit {
+export class DocumentList implements OnInit, OnDestroy {
   // This array stores the list of documents that will be shown on the page.
   // It starts empty because the data now comes from the DocumentService.
   documents: Document[] = [];
+
+  // This stores the subscription so we can unsubscribe later.
+  subscription!: Subscription;
 
   // The constructor injects the DocumentService into this component.
   constructor(private documentService: DocumentService) {}
@@ -37,12 +44,26 @@ export class DocumentList implements OnInit {
   ngOnInit(): void {
     // Get the documents from the service and save them in this component.
     this.documents = this.documentService.getDocuments();
+
+    // Listen for changes to the documents list.
+    this.subscription = this.documentService.documentListChangedEvent.subscribe(
+      (documentsList: Document[]) => {
+        // Replace the local list with the updated list from the service.
+        this.documents = documentsList;
+      }
+    );
+  }
+
+  // ngOnDestroy runs before Angular removes this component from memory.
+  ngOnDestroy(): void {
+    // Unsubscribe to avoid a memory leak.
+    this.subscription.unsubscribe();
   }
 
   // This method runs when the user selects a document.
   onSelectedDocument(document: Document): void {
-    // This sends the selected document through the service event.
+    // This sends the selected document through the service Subject.
     // Other components can listen to this event without using parent-child output binding.
-    this.documentService.documentSelectedEvent.emit(document);
+    this.documentService.documentSelectedEvent.next(document);
   }
 }

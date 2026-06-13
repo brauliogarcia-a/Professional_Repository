@@ -1,6 +1,9 @@
-// This imports the Angular tools needed to create a service and send events.
-// EventEmitter lets this service notify other components when a contact is selected.
-import { EventEmitter, Injectable } from '@angular/core';
+// This imports the Angular tools needed to create a service.
+import { Injectable } from '@angular/core';
+
+// This imports Subject from rxjs.
+// A Subject lets this service notify components when something changes.
+import { Subject } from 'rxjs';
 
 // This imports the Contact model.
 // The model defines the structure of a contact object.
@@ -18,17 +21,28 @@ import { MOCKCONTACTS } from './MOCKCONTACTS';
 
 // This service manages the contact data for the application.
 export class ContactService {
-  // This event is used for cross-component communication.
+  // This Subject is used for cross-component communication.
   // When a contact is selected, this event sends that contact to the components listening to it.
-  contactSelectedEvent = new EventEmitter<Contact>();
+  contactSelectedEvent = new Subject<Contact>();
+
+  // This Subject tells the contact list when the contacts array has changed.
+  // It sends a new copy of the list after a contact is added, updated, or deleted.
+  contactListChangedEvent = new Subject<Contact[]>();
 
   // This array stores the main list of contacts.
   contacts: Contact[] = [];
+
+  // This keeps track of the largest contact id.
+  // It helps create a new unique id when a contact is added.
+  maxContactId: number = 0;
 
   // The constructor runs when Angular creates this service.
   constructor() {
     // This loads the mock contacts into the service.
     this.contacts = MOCKCONTACTS;
+
+    // This gets the largest id that already exists in the contact list.
+    this.maxContactId = this.getMaxId();
   }
 
   // This method returns a copy of the contact list.
@@ -50,5 +64,93 @@ export class ContactService {
 
     // Return null if no contact was found.
     return null;
+  }
+
+  // This method finds the largest id number in the contact list.
+  getMaxId(): number {
+    // Start with zero in case the list is empty.
+    let maxId = 0;
+
+    // Loop through every contact in the contacts list.
+    for (const contact of this.contacts) {
+      // Convert the contact id from a string to a number.
+      const currentId = parseInt(contact.id, 10);
+
+      // Only compare valid numbers.
+      if (!isNaN(currentId) && currentId > maxId) {
+        // Save the largest id found so far.
+        maxId = currentId;
+      }
+    }
+
+    // Return the largest id found.
+    return maxId;
+  }
+
+  // This method adds a new contact to the list.
+  addContact(newContact: Contact): void {
+    // Stop if no contact was sent to this method.
+    if (!newContact) {
+      return;
+    }
+
+    // Create the next unique id.
+    this.maxContactId++;
+
+    // Save the new id as a string because the Contact model uses a string id.
+    newContact.id = this.maxContactId.toString();
+
+    // Add the new contact to the contacts array.
+    this.contacts.push(newContact);
+
+    // Tell the contact list that the contacts array changed.
+    this.contactListChangedEvent.next(this.contacts.slice());
+  }
+
+  // This method updates an existing contact in the list.
+  updateContact(originalContact: Contact, newContact: Contact): void {
+    // Stop if one of the contacts was not sent to this method.
+    if (!originalContact || !newContact) {
+      return;
+    }
+
+    // Find the position of the original contact in the array.
+    const pos = this.contacts.indexOf(originalContact);
+
+    // Stop if the original contact was not found.
+    if (pos < 0) {
+      return;
+    }
+
+    // Keep the same id because this is an update, not a new contact.
+    newContact.id = originalContact.id;
+
+    // Replace the old contact with the new contact.
+    this.contacts[pos] = newContact;
+
+    // Tell the contact list that the contacts array changed.
+    this.contactListChangedEvent.next(this.contacts.slice());
+  }
+
+  // This method deletes a contact from the list.
+  deleteContact(contact: Contact): void {
+    // Stop if no contact was sent to this method.
+    if (!contact) {
+      return;
+    }
+
+    // Find the position of the contact in the array.
+    const pos = this.contacts.indexOf(contact);
+
+    // Stop if the contact was not found.
+    if (pos < 0) {
+      return;
+    }
+
+    // Remove one contact from the array at the position found.
+    this.contacts.splice(pos, 1);
+
+    // Tell the contact list that the contacts array changed.
+    this.contactListChangedEvent.next(this.contacts.slice());
   }
 }

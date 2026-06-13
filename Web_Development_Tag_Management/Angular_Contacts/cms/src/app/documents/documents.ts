@@ -1,5 +1,9 @@
-// This imports the Angular tools needed to create a component and use the OnInit lifecycle method.
-import { Component, OnInit } from '@angular/core';
+// This imports the Angular tools needed to create a component and use lifecycle methods.
+import { Component, OnDestroy, OnInit } from '@angular/core';
+
+// This imports Subscription from rxjs.
+// It lets us unsubscribe before this component is destroyed.
+import { Subscription } from 'rxjs';
 
 // This imports the Document model.
 // The model defines the structure of a document object.
@@ -25,10 +29,13 @@ import { DocumentService } from './document.service';
 })
 
 // This is the Documents component class.
-export class Documents implements OnInit {
+export class Documents implements OnInit, OnDestroy {
   // This variable keeps track of the document selected by the user.
   // It starts as null because no document is selected at the beginning.
   selectedDocument: Document | null = null;
+
+  // This stores the subscription so we can unsubscribe later.
+  subscription!: Subscription;
 
   // The constructor injects the DocumentService into this component.
   constructor(private documentService: DocumentService) {}
@@ -36,9 +43,15 @@ export class Documents implements OnInit {
   // ngOnInit runs when Angular finishes creating this component.
   ngOnInit(): void {
     // Listen for the selected document event from the service.
-    this.documentService.documentSelectedEvent.subscribe((document: Document) => {
+    this.subscription = this.documentService.documentSelectedEvent.subscribe((document: Document) => {
       // Save the selected document so the detail component can display it.
       this.selectedDocument = document;
     });
+  }
+
+  // ngOnDestroy runs before Angular removes this component from memory.
+  ngOnDestroy(): void {
+    // Unsubscribe to avoid a memory leak.
+    this.subscription.unsubscribe();
   }
 }
