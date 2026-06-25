@@ -1,9 +1,16 @@
-// This imports the Angular tools needed to create a component and receive data from a parent.
-import { Component, Input } from '@angular/core';
+// This imports the Angular tools needed to create a component and use ngOnInit.
+import { Component, OnInit } from '@angular/core';
+
+// These imports let this component read the id from the route.
+import { ActivatedRoute, Params } from '@angular/router';
 
 // This imports the Contact model.
 // The model defines the structure of a contact object.
 import { Contact } from '../contact.model';
+
+// This imports the ContactService.
+// The service lets this component get the selected contact by id.
+import { ContactService } from '../contact.service';
 
 // This decorator tells Angular that this class is a component.
 @Component({
@@ -21,9 +28,25 @@ import { Contact } from '../contact.model';
 })
 
 // This is the ContactDetail component class.
-export class ContactDetail {
-  // @Input lets this child component receive data from the parent component.
-  // contact will receive the selected contact from the Contacts component.
-  // It starts as null because no contact is selected at the beginning.
-  @Input() contact: Contact | null = null;
+export class ContactDetail implements OnInit {
+  // This variable stores the contact that matches the id in the route.
+  contact: Contact | null = null;
+
+  // The constructor injects the route and the ContactService.
+  constructor(
+    private route: ActivatedRoute,
+    private contactService: ContactService
+  ) {}
+
+  // ngOnInit runs when Angular finishes creating this component.
+  ngOnInit(): void {
+    // Listen to the route parameters so the detail changes when a different contact is selected.
+    this.route.params.subscribe((params: Params) => {
+      // Get the contact id from the route.
+      const id = params['id'];
+
+      // Get the matching contact from the service.
+      this.contact = this.contactService.getContact(id);
+    });
+  }
 }

@@ -8,8 +8,8 @@
       <!-- This is the title of the panel, shown on the left side. -->
       <span class="pull-left title">Documents</span>
 
-      <!-- This button is shown on the right side to add a new document. -->
-      <a class="btn btn-success pull-right">Add Document</a>
+      <!-- This button routes to the form used to add a new document. -->
+      <a class="btn btn-success pull-right" [routerLink]="['new']">Add Document</a>
     </div>
   </div>
 
@@ -17,20 +17,14 @@
   <div class="panel-body">
     <div class="center-panel">
 
-      <!-- This repeats one list item for each document in the documents array. -->
       <!-- This repeats one document item for each document in the documents array. -->
-      <!-- [document] sends the current document to the DocumentItem component. -->
-      <!-- When the user clicks a document, it calls onSelected() and sends that document. -->
-      <!-- When the user clicks a document, it calls onSelectedDocument() and sends that document. -->
-      <!-- The click event sends the selected document to the Documents parent component. -->
+      <!-- routerLink sends the user to the detail route for the selected document. -->
       <cms-document-item
         *ngFor="let document of documents"
         [document]="document"
+        [routerLink]="[document.id]"
         (click)="onSelectedDocument(document)"
       ></cms-document-item>
-
-      <!-- This displays the name of the current document. -->
-      <!-- This displays the description of the current document. -->
     </div>
   </div>
 

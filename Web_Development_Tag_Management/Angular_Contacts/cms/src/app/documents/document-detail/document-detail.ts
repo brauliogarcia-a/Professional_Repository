@@ -1,9 +1,16 @@
-// This imports the Angular tools needed to create a component and receive data from a parent.
-import { Component, Input } from '@angular/core';
+// This imports the Angular tools needed to create a component and use ngOnInit.
+import { Component, OnInit } from '@angular/core';
+
+// These imports let this component read the id from the route.
+import { ActivatedRoute, Params } from '@angular/router';
 
 // This imports the Document model.
 // The model defines the structure of a document object.
 import { Document } from '../document.model';
+
+// This imports the DocumentService.
+// The service lets this component get the selected document by id.
+import { DocumentService } from '../document.service';
 
 // This decorator tells Angular that this class is a component.
 @Component({
@@ -21,9 +28,25 @@ import { Document } from '../document.model';
 })
 
 // This is the DocumentDetail component class.
-export class DocumentDetail {
-  // @Input lets this child component receive data from the parent component.
-  // document will receive the selected document from the Documents component.
-  // It starts as null because no document is selected at the beginning.
-  @Input() document: Document | null = null;
+export class DocumentDetail implements OnInit {
+  // This variable stores the document that matches the id in the route.
+  document: Document | null = null;
+
+  // The constructor injects the route and the DocumentService.
+  constructor(
+    private route: ActivatedRoute,
+    private documentService: DocumentService
+  ) {}
+
+  // ngOnInit runs when Angular finishes creating this component.
+  ngOnInit(): void {
+    // Listen to the route parameters so the detail changes when a different document is selected.
+    this.route.params.subscribe((params: Params) => {
+      // Get the document id from the route.
+      const id = params['id'];
+
+      // Get the matching document from the service.
+      this.document = this.documentService.getDocument(id);
+    });
+  }
 }

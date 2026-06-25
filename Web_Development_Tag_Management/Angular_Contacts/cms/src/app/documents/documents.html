@@ -5,20 +5,14 @@
   <div class="col-md-5">
 
     <!-- This shows the document list component. -->
-    <!-- The selected document is now sent through DocumentService instead of an Output event here. -->
     <cms-document-list></cms-document-list>
   </div>
 
-  <!-- This column shows the selected document details on the right side. -->
+  <!-- This column shows the selected document detail or the document edit form. -->
   <div class="col-md-4">
 
-    <!-- This shows the document detail component only after the user selects a document. -->
-    <!-- *ngIf prevents an empty detail panel from showing before a document is selected. -->
-    <!-- [document] sends the selectedDocument data from this parent component to the child component. -->
-    <cms-document-detail
-      *ngIf="selectedDocument"
-      [document]="selectedDocument"
-    ></cms-document-detail>
+    <!-- The child routes load DocumentDetail or DocumentEdit here. -->
+    <router-outlet></router-outlet>
   </div>
 
 </div>

@@ -11,6 +11,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { Documents } from './documents/documents';
 import { Messages } from './messages/messages';
 import { Contacts } from './contacts/contacts';
+import { DocumentDetail } from './documents/document-detail/document-detail';
+import { DocumentEdit } from './documents/document-edit/document-edit';
+import { ContactDetail } from './contacts/contact-detail/contact-detail';
+import { ContactEdit } from './contacts/contact-edit/contact-edit';
 
 // This array defines the main routes for the application.
 // Each path is connected to the component that Angular should show.
@@ -19,13 +23,31 @@ const appRoutes: Routes = [
   { path: '', redirectTo: '/documents', pathMatch: 'full' },
 
   // This route shows the Documents component.
-  { path: 'documents', component: Documents },
+  // The child routes decide what appears on the right side of the Documents page.
+  {
+    path: 'documents',
+    component: Documents,
+    children: [
+      { path: 'new', component: DocumentEdit },
+      { path: ':id', component: DocumentDetail },
+      { path: ':id/edit', component: DocumentEdit },
+    ],
+  },
 
   // This route shows the Messages component.
   { path: 'messages', component: Messages },
 
   // This route shows the Contacts component.
-  { path: 'contacts', component: Contacts },
+  // The child routes decide what appears on the right side of the Contacts page.
+  {
+    path: 'contacts',
+    component: Contacts,
+    children: [
+      { path: 'new', component: ContactEdit },
+      { path: ':id', component: ContactDetail },
+      { path: ':id/edit', component: ContactEdit },
+    ],
+  },
 
   // If the user types a route that does not exist, send them back to documents.
   { path: '**', redirectTo: '/documents' },

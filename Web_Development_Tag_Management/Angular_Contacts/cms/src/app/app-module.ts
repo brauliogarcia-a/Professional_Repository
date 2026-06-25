@@ -7,6 +7,9 @@ import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 // BrowserModule is needed because this Angular app runs in the browser.
 import { BrowserModule } from '@angular/platform-browser';
 
+// This imports FormsModule so Angular can use template-driven forms.
+import { FormsModule } from '@angular/forms';
+
 // These are the components used in the application.
 // App is the main component of the app.
 import { App } from './app';
@@ -19,12 +22,14 @@ import { Contacts } from './contacts/contacts';
 import { ContactList } from './contacts/contact-list/contact-list';
 import { ContactItem } from './contacts/contact-item/contact-item';
 import { ContactDetail } from './contacts/contact-detail/contact-detail';
+import { ContactEdit } from './contacts/contact-edit/contact-edit';
 
 // These components are related to the Documents section.
 import { Documents } from './documents/documents';
 import { DocumentList } from './documents/document-list/document-list';
 import { DocumentDetail } from './documents/document-detail/document-detail';
 import { DocumentItem } from './documents/document-item/document-item';
+import { DocumentEdit } from './documents/document-edit/document-edit';
 
 // These components are related to the Messages section.
 import { Messages } from './messages/messages';
@@ -49,10 +54,12 @@ import { AppRoutingModule } from './app-routing.module';
     ContactList,
     ContactItem,
     ContactDetail,
+    ContactEdit,
     Documents,
     DocumentList,
     DocumentItem,
     DocumentDetail,
+    DocumentEdit,
     Messages,
     MessageList,
     MessageItem,
@@ -63,7 +70,8 @@ import { AppRoutingModule } from './app-routing.module';
   // Imports are other modules that this module needs.
   // BrowserModule allows the app to run in a web browser.
   // AppRoutingModule allows the app to use Angular routing.
-  imports: [BrowserModule, AppRoutingModule],
+  // FormsModule allows the edit components to use ngForm and ngModel.
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
 
   // Providers are services or features available to the app.
   // This one helps handle global browser errors.

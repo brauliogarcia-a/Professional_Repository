@@ -5,16 +5,14 @@
   <div class="col-md-5">
 
     <!-- This shows the contact list component. -->
-    <!-- The selected contact is now sent through ContactService instead of an Output event here. -->
     <cms-contact-list></cms-contact-list>
   </div>
 
-  <!-- This column shows the selected contact details on the right side. -->
+  <!-- This column shows the selected contact detail or the contact edit form. -->
   <div class="col-md-4">
 
-    <!-- This shows the contact detail component. -->
-    <!-- [contact] sends the selectedContact data from this parent component to the child component. -->
-    <cms-contact-detail [contact]="selectedContact"></cms-contact-detail>
+    <!-- The child routes load ContactDetail or ContactEdit here. -->
+    <router-outlet></router-outlet>
   </div>
 
 </div>

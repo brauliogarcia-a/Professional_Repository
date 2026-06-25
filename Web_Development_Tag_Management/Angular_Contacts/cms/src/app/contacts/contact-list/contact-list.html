@@ -7,18 +7,19 @@
     <!-- This is the title of the panel, shown on the left side. -->
     <h3 class="panel-title pull-left">Contacts</h3>
 
-    <!-- This button is shown on the right side to create a new contact. -->
-    <a class="btn btn-success pull-right">New Contact</a>
+    <!-- This button routes to the form used to add a new contact. -->
+    <a class="btn btn-success pull-right" [routerLink]="['new']">New Contact</a>
   </div>
 
   <!-- This is the main body of the panel. -->
   <div class="panel-body">
 
     <!-- This repeats one contact item component for each contact in the contacts array. -->
-    <!-- The list still controls the selected contact event. -->
+    <!-- routerLink sends the user to the detail route for the selected contact. -->
     <cms-contact-item
       *ngFor="let contact of contacts"
       [contact]="contact"
+      [routerLink]="[contact.id]"
       (click)="onSelected(contact)"
     ></cms-contact-item>
   </div>

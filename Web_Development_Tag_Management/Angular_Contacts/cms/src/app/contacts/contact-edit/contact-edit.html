@@ -1,0 +1,134 @@
+<!-- This panel contains the form to add or edit a contact. -->
+<div class="panel panel-default">
+  <div class="panel-body">
+
+    <!-- #f gives Angular a local reference to the form. -->
+    <!-- ngSubmit calls onSubmit() when the user saves the form. -->
+    <form id="contact-edit" #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <label for="name">Name:</label>
+
+          <!-- This input is connected to the contact name property. -->
+          <!-- The required class is used by the CSS for validation styling. -->
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control required"
+            size="120"
+            max="120"
+            required
+            [ngModel]="contact?.name"
+            #name="ngModel">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <label for="email">Email:</label>
+
+          <!-- This input is connected to the contact email property. -->
+          <!-- It is required and also checks for a valid email pattern. -->
+          <input
+            type="text"
+            id="email"
+            name="email"
+            class="form-control required"
+            size="120"
+            max="255"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+            [ngModel]="contact?.email"
+            #email="ngModel">
+
+          <!-- This message appears after the user touches the email field and the value is invalid. -->
+          <div class="alert alert-danger" *ngIf="email.touched && !email.valid">
+            Enter a valid Email address.
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <label for="phone">Phone:</label>
+
+          <!-- This input is connected to the contact phone property. -->
+          <!-- The pattern allows a normal 10 digit phone number format. -->
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            class="form-control invalid"
+            size="150"
+            max="255"
+            pattern="\D*([2-9]\d{2})\D*([2-9]\d{2})\D*(\d{4})\D*"
+            [ngModel]="contact?.phone"
+            #phone="ngModel">
+
+          <!-- This message appears after the user touches the phone field and the value is invalid. -->
+          <div class="alert alert-danger" *ngIf="phone.touched && !phone.valid">
+            Enter a valid phone number.
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <label for="imageUrl">Image URL:</label>
+
+          <!-- This input is connected to the contact imageUrl property. -->
+          <input
+            type="text"
+            id="imageUrl"
+            name="imageUrl"
+            class="form-control"
+            size="150"
+            max="255"
+            [ngModel]="contact?.imageUrl"
+            #imageUrl="ngModel">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group">
+          <label for="groupList">Group Contacts:</label>
+
+          <div class="row groupDiv" id="groupList">
+
+            <!-- This repeats the contacts that belong to the current group. -->
+            <div *ngFor="let contact of groupContacts; let i = index">
+              <div>
+                <cms-contact-item class="col-sm-11" [contact]="contact"></cms-contact-item>
+
+                <!-- This button removes one contact from the group list. -->
+                <button class="btn btn-danger col-sm-2 deleteButton" type="button" (click)="onRemoveItem(i)">X</button>
+              </div>
+            </div>
+
+            <!-- This message is shown when there are no contacts in the group. -->
+            <span class="dragMsg" *ngIf="groupContacts.length < 1">Drag contacts in group here</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- This message appears when name or email are missing. -->
+      <div class="alert alert-danger" *ngIf="(!name.valid && name.touched) || (!email.valid && email.touched)">
+        The Name and Email fields are required.
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 btn-toolbar">
+
+          <!-- The Save button stays disabled until the form is valid. -->
+          <button class="btn btn-success" type="submit" [disabled]="!f.valid">Save</button>
+
+          <!-- Cancel returns the user to the contacts route without saving. -->
+          <button class="btn btn-primary" type="button" (click)="onCancel()">Cancel</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>

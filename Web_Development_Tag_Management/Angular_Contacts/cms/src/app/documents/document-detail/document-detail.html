@@ -1,19 +1,23 @@
 <!-- This panel shows the details of the selected document. -->
 <!-- *ngIf checks if there is a document selected before showing the panel. -->
-<!-- "document as selectedDocument" gives the document a local name to use in this template. -->
-<div class="panel panel-default" xmlns="http://www.w3.org/1999/html">
+<div class="panel panel-default" *ngIf="document as selectedDocument" xmlns="http://www.w3.org/1999/html">
 
   <!-- This is the header of the document detail panel. -->
   <div class="panel-heading">
     <div class="row pad-all">
 
-      <!-- This shows the selected document name on the left side. -->
       <!-- This displays the selected document name. -->
-      <h4 class="title margin-left-right">{{ document?.name }}</h4>
+      <h4 class="title margin-left-right">{{ selectedDocument.name }}</h4>
 
       <div class="row pull-right margin-left-right">
-        <a class="btn btn-primary">View</a>
-        <a class="btn btn-info" >Edit</a>
+
+        <!-- This opens the document URL in a new browser tab. -->
+        <a class="btn btn-primary" [href]="selectedDocument.url" target="_blank">View</a>
+
+        <!-- This routes to the edit form for the selected document. -->
+        <a class="btn btn-info" [routerLink]="['edit']">Edit</a>
+
+        <!-- This button can be used later to delete the selected document. -->
         <a class="btn btn-danger">Delete</a>
       </div>
     </div>
@@ -24,16 +28,14 @@
     <div class="pad-left-right">
       <div class="row">
         <label>Description:</label>
-        <!-- This shows the description of the selected document. -->
         <!-- This displays the selected document description. -->
-        <span class="label-value">{{ document?.description }}</span>
+        <span class="label-value">{{ selectedDocument.description }}</span>
       </div>
       <br>
       <div class="row">
         <label>URL:</label>
-        <!-- This shows the URL of the selected document. -->
         <!-- This displays the selected document URL. -->
-        <span class="label-value">{{ document?.url }}</span>
+        <span class="label-value">{{ selectedDocument.url }}</span>
       </div>
     </div>
   </div>
