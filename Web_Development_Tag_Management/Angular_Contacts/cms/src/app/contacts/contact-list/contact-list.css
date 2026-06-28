@@ -1,0 +1,35 @@
+.panel-heading {
+  min-height: 88px;
+}
+
+.contact-search {
+  float: left;
+  width: 62%;
+  margin-left: 15px;
+  margin-top: 4px;
+}
+
+.contact-search .input-group-addon {
+  cursor: pointer;
+  width: 40px;
+}
+
+.contact-new-button {
+  float: right;
+  margin-right: 15px;
+  margin-top: 4px;
+}
+
+.contact-new-button .btn {
+  min-width: 108px;
+  height: 34px;
+}
+
+.contact-title {
+  margin-left: 1px;
+  margin-bottom: 8px;
+}
+
+.contact-title .title {
+  display: block;
+}

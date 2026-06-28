@@ -34,6 +34,9 @@ export class ContactList implements OnInit, OnDestroy {
   // It starts empty because the data now comes from the ContactService.
   contacts: Contact[] = [];
 
+  // This stores the text typed in the contact search box.
+  term: string = '';
+
   // This stores the subscription so we can unsubscribe later.
   subscription!: Subscription;
 
@@ -58,6 +61,11 @@ export class ContactList implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     // Unsubscribe to avoid a memory leak.
     this.subscription.unsubscribe();
+  }
+
+  // This method saves the current value from the search box.
+  search(value: string): void {
+    this.term = value;
   }
 
   // This method runs when the user selects a contact.

@@ -5,6 +5,7 @@
     <!-- #f gives Angular a local reference to the form. -->
     <!-- ngSubmit calls onSubmit() when the user saves the form. -->
     <form id="contact-edit" #f="ngForm" (ngSubmit)="onSubmit(f)">
+
       <div class="row">
         <div class="col-sm-12 form-group">
           <label for="name">Name:</label>
@@ -90,31 +91,40 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="form-group">
-          <label for="groupList">Group Contacts:</label>
+      <!-- This area shows the contacts assigned to the current group. -->
+      <div class="form-group">
+        <label for="groupList">Group Contacts:</label>
 
-          <div class="row groupDiv" id="groupList">
+        <div class="groupDiv" id="groupList">
 
-            <!-- This repeats the contacts that belong to the current group. -->
-            <div *ngFor="let contact of groupContacts; let i = index">
-              <div>
-                <cms-contact-item class="col-sm-11" [contact]="contact"></cms-contact-item>
+          <!-- This repeats the contacts that belong to the current group. -->
+          <div *ngFor="let contact of groupContacts; let i = index">
+            <cms-contact-item
+              class="col-sm-11"
+              [contact]="contact">
+            </cms-contact-item>
 
-                <!-- This button removes one contact from the group list. -->
-                <button class="btn btn-danger col-sm-2 deleteButton" type="button" (click)="onRemoveItem(i)">X</button>
-              </div>
-            </div>
-
-            <!-- This message is shown when there are no contacts in the group. -->
-            <span class="dragMsg" *ngIf="groupContacts.length < 1">Drag contacts in group here</span>
+            <!-- This button removes one contact from the group list. -->
+            <button
+              class="btn btn-danger col-sm-2 deleteButton"
+              type="button"
+              (click)="onRemoveItem(i)">
+              X
+            </button>
           </div>
+
+          <!-- This message is shown when there are no contacts in the group. -->
+          <span class="dragMsg" *ngIf="groupContacts.length < 1">
+            Drag contacts in group here
+          </span>
 
         </div>
       </div>
 
       <!-- This message appears when name or email are missing. -->
-      <div class="alert alert-danger" *ngIf="(!name.valid && name.touched) || (!email.valid && email.touched)">
+      <div
+        class="alert alert-danger"
+        *ngIf="(!name.valid && name.touched) || (!email.valid && email.touched)">
         The Name and Email fields are required.
       </div>
 
@@ -122,10 +132,20 @@
         <div class="col-xs-12 btn-toolbar">
 
           <!-- The Save button stays disabled until the form is valid. -->
-          <button class="btn btn-success" type="submit" [disabled]="!f.valid">Save</button>
+          <button
+            class="btn btn-success"
+            type="submit"
+            [disabled]="!f.valid">
+            Save
+          </button>
 
           <!-- Cancel returns the user to the contacts route without saving. -->
-          <button class="btn btn-primary" type="button" (click)="onCancel()">Cancel</button>
+          <button
+            class="btn btn-primary"
+            type="button"
+            (click)="onCancel()">
+            Cancel
+          </button>
         </div>
       </div>
 

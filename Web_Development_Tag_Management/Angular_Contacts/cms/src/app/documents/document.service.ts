@@ -1,6 +1,9 @@
 // This imports the Angular tools needed to create a service.
 import { Injectable } from '@angular/core';
 
+// This imports the Angular tools needed to make HTTP requests.
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+
 // This imports Subject from rxjs.
 // A Subject lets this service notify components when something changes.
 import { Subject } from 'rxjs';
@@ -12,6 +15,9 @@ import { Document } from './document.model';
 // This imports the mock document data for this week.
 // Later this data can come from a real database or server.
 import { MOCKDOCUMENTS } from './MOCKDOCUMENTS';
+
+// This imports the Firebase database URL used by this application.
+import { DATABASE_URL } from '../shared/database-config';
 
 // This decorator tells Angular that this class is a service.
 @Injectable({
@@ -36,9 +42,12 @@ export class DocumentService {
   // It helps create a new unique id when a document is added.
   maxDocumentId: number = 0;
 
+  // This is the URL used for the documents data in Firebase.
+  private documentsUrl = `${DATABASE_URL}/documents.json`;
+
   // The constructor runs when Angular creates this service.
-  constructor() {
-    // This loads the mock documents into the service.
+  constructor(private http: HttpClient) {
+    // This loads the mock documents into the service until the HTTP request returns.
     this.documents = MOCKDOCUMENTS;
 
     // This gets the largest id that already exists in the document list.
@@ -47,8 +56,45 @@ export class DocumentService {
 
   // This method returns a copy of the document list.
   getDocuments(): Document[] {
+    // Get the documents from the Firebase database.
+    this.http.get<Document[]>(this.documentsUrl).subscribe({
+      next: (documents: Document[]) => {
+        // Use the server data only when the database returns a list.
+        if (documents) {
+          this.documents = documents;
+          this.maxDocumentId = this.getMaxId();
+          this.documents.sort((a, b) => a.name.localeCompare(b.name));
+          this.documentListChangedEvent.next(this.documents.slice());
+        }
+      },
+      error: (error) => {
+        // Keep the mock documents available if the Firebase URL has not been configured yet.
+        console.error('Could not load documents from Firebase.', error);
+      },
+    });
+
     // slice() gives the component a copy so it does not directly change the original array.
     return this.documents.slice();
+  }
+
+  // This method saves the current document list in Firebase.
+  storeDocuments(): void {
+    // Convert the documents array to JSON before it is sent to the server.
+    const documentsString = JSON.stringify(this.documents);
+
+    // These headers tell Firebase that the request body contains JSON.
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+
+    // Send the full documents list to Firebase with an HTTP PUT request.
+    this.http.put(this.documentsUrl, documentsString, { headers }).subscribe({
+      next: () => {
+        // Tell the list component that the documents were saved.
+        this.documentListChangedEvent.next(this.documents.slice());
+      },
+      error: (error) => {
+        console.error('Could not save documents to Firebase.', error);
+      },
+    });
   }
 
   // This method finds one document by id.
@@ -103,8 +149,8 @@ export class DocumentService {
     // Add the new document to the documents array.
     this.documents.push(newDocument);
 
-    // Tell the document list that the documents array changed.
-    this.documentListChangedEvent.next(this.documents.slice());
+    // Save the new document list in Firebase.
+    this.storeDocuments();
   }
 
   // This method updates an existing document in the list.
@@ -128,8 +174,8 @@ export class DocumentService {
     // Replace the old document with the new document.
     this.documents[pos] = newDocument;
 
-    // Tell the document list that the documents array changed.
-    this.documentListChangedEvent.next(this.documents.slice());
+    // Save the updated document list in Firebase.
+    this.storeDocuments();
   }
 
   // This method deletes a document from the list.
@@ -150,7 +196,7 @@ export class DocumentService {
     // Remove one document from the array at the position found.
     this.documents.splice(pos, 1);
 
-    // Tell the document list that the documents array changed.
-    this.documentListChangedEvent.next(this.documents.slice());
+    // Save the updated document list in Firebase.
+    this.storeDocuments();
   }
 }

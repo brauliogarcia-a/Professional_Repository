@@ -6,8 +6,8 @@
   border: 1px solid red;
 }
 
-.pad-left-right{
-  padding-left:.1rem;
+.pad-left-right {
+  padding-left: .1rem;
 }
 
 .deleteButton {
@@ -21,12 +21,17 @@
 }
 
 .groupDiv {
-  min-height: 6rem;
+  width: 100%;
+  min-height: 60px;
+  box-sizing: border-box;
   border: solid thin lightgrey;
+  padding: 8px;
 }
 
 .dragMsg {
-  font-size: 2rem;
+  display: block;
   color: darkgrey;
-  margin-left: 3rem;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 4px;
 }

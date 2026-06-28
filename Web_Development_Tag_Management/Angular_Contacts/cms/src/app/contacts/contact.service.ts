@@ -1,6 +1,9 @@
 // This imports the Angular tools needed to create a service.
 import { Injectable } from '@angular/core';
 
+// This imports the Angular tools needed to make HTTP requests.
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+
 // This imports Subject from rxjs.
 // A Subject lets this service notify components when something changes.
 import { Subject } from 'rxjs';
@@ -12,6 +15,9 @@ import { Contact } from './contact.model';
 // This imports the mock contact data for this week.
 // Later this data can come from a real database or server.
 import { MOCKCONTACTS } from './MOCKCONTACTS';
+
+// This imports the Firebase database URL used by this application.
+import { DATABASE_URL } from '../shared/database-config';
 
 // This decorator tells Angular that this class is a service.
 @Injectable({
@@ -36,9 +42,12 @@ export class ContactService {
   // It helps create a new unique id when a contact is added.
   maxContactId: number = 0;
 
+  // This is the URL used for the contacts data in Firebase.
+  private contactsUrl = `${DATABASE_URL}/contacts.json`;
+
   // The constructor runs when Angular creates this service.
-  constructor() {
-    // This loads the mock contacts into the service.
+  constructor(private http: HttpClient) {
+    // This loads the mock contacts into the service until the HTTP request returns.
     this.contacts = MOCKCONTACTS;
 
     // This gets the largest id that already exists in the contact list.
@@ -47,8 +56,45 @@ export class ContactService {
 
   // This method returns a copy of the contact list.
   getContacts(): Contact[] {
+    // Get the contacts from the Firebase database.
+    this.http.get<Contact[]>(this.contactsUrl).subscribe({
+      next: (contacts: Contact[]) => {
+        // Use the server data only when the database returns a list.
+        if (contacts) {
+          this.contacts = contacts;
+          this.maxContactId = this.getMaxId();
+          this.contacts.sort((a, b) => a.name.localeCompare(b.name));
+          this.contactListChangedEvent.next(this.contacts.slice());
+        }
+      },
+      error: (error) => {
+        // Keep the mock contacts available if the Firebase URL has not been configured yet.
+        console.error('Could not load contacts from Firebase.', error);
+      },
+    });
+
     // slice() gives the component a copy so it does not directly change the original array.
     return this.contacts.slice();
+  }
+
+  // This method saves the current contact list in Firebase.
+  storeContacts(): void {
+    // Convert the contacts array to JSON before it is sent to the server.
+    const contactsString = JSON.stringify(this.contacts);
+
+    // These headers tell Firebase that the request body contains JSON.
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+
+    // Send the full contacts list to Firebase with an HTTP PUT request.
+    this.http.put(this.contactsUrl, contactsString, { headers }).subscribe({
+      next: () => {
+        // Tell the list component that the contacts were saved.
+        this.contactListChangedEvent.next(this.contacts.slice());
+      },
+      error: (error) => {
+        console.error('Could not save contacts to Firebase.', error);
+      },
+    });
   }
 
   // This method finds one contact by id.
@@ -103,8 +149,8 @@ export class ContactService {
     // Add the new contact to the contacts array.
     this.contacts.push(newContact);
 
-    // Tell the contact list that the contacts array changed.
-    this.contactListChangedEvent.next(this.contacts.slice());
+    // Save the new contact list in Firebase.
+    this.storeContacts();
   }
 
   // This method updates an existing contact in the list.
@@ -128,8 +174,8 @@ export class ContactService {
     // Replace the old contact with the new contact.
     this.contacts[pos] = newContact;
 
-    // Tell the contact list that the contacts array changed.
-    this.contactListChangedEvent.next(this.contacts.slice());
+    // Save the updated contact list in Firebase.
+    this.storeContacts();
   }
 
   // This method deletes a contact from the list.
@@ -150,7 +196,7 @@ export class ContactService {
     // Remove one contact from the array at the position found.
     this.contacts.splice(pos, 1);
 
-    // Tell the contact list that the contacts array changed.
-    this.contactListChangedEvent.next(this.contacts.slice());
+    // Save the updated contact list in Firebase.
+    this.storeContacts();
   }
 }

@@ -5,10 +5,28 @@
   <div class="panel-heading clearfix">
 
     <!-- This is the title of the panel, shown on the left side. -->
-    <h3 class="panel-title pull-left">Contacts</h3>
+    <div class="contact-title">
+      <span class="title">Contacts</span>
+    </div>
 
-    <!-- This button routes to the form used to add a new contact. -->
-    <a class="btn btn-success pull-right" [routerLink]="['new']">New Contact</a>
+    <div class="row">
+      <!-- This input lets the user search contacts by name. -->
+      <div class="input-group contact-search">
+        <input
+          type="text"
+          class="form-control"
+          #searchBox
+          placeholder="Search contacts"
+          (keyup)="search(searchBox.value)"
+        />
+        <div class="glyphicon glyphicon-search input-group-addon" (click)="search(searchBox.value)"></div>
+      </div>
+
+      <!-- This button routes to the form used to add a new contact. -->
+      <div class="contact-new-button">
+        <a class="btn btn-success" [routerLink]="['new']">New Contact</a>
+      </div>
+    </div>
   </div>
 
   <!-- This is the main body of the panel. -->
@@ -17,7 +35,7 @@
     <!-- This repeats one contact item component for each contact in the contacts array. -->
     <!-- routerLink sends the user to the detail route for the selected contact. -->
     <cms-contact-item
-      *ngFor="let contact of contacts"
+      *ngFor="let contact of contacts | contactFilter: term"
       [contact]="contact"
       [routerLink]="[contact.id]"
       (click)="onSelected(contact)"

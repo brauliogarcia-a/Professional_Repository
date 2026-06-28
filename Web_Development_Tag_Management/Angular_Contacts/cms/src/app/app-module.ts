@@ -10,6 +10,9 @@ import { BrowserModule } from '@angular/platform-browser';
 // This imports FormsModule so Angular can use template-driven forms.
 import { FormsModule } from '@angular/forms';
 
+// This imports HttpClientModule so services can make HTTP requests.
+import { HttpClientModule } from '@angular/common/http';
+
 // These are the components used in the application.
 // App is the main component of the app.
 import { App } from './app';
@@ -40,6 +43,9 @@ import { MessageEdit } from './messages/message-edit/message-edit';
 // This directive is used to open and close the User dropdown menu.
 import { DropdownDirective } from './dropdown.directive';
 
+// This pipe filters contacts by the text typed in the search box.
+import { ContactFilterPipe } from './contacts/contact-filter.pipe';
+
 // This imports the routing module for the application.
 // The routing module controls which main component is shown for each URL.
 import { AppRoutingModule } from './app-routing.module';
@@ -65,13 +71,14 @@ import { AppRoutingModule } from './app-routing.module';
     MessageItem,
     MessageEdit,
     DropdownDirective,
+    ContactFilterPipe,
   ],
 
   // Imports are other modules that this module needs.
   // BrowserModule allows the app to run in a web browser.
   // AppRoutingModule allows the app to use Angular routing.
   // FormsModule allows the edit components to use ngForm and ngModel.
-  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule],
 
   // Providers are services or features available to the app.
   // This one helps handle global browser errors.
