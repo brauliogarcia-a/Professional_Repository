@@ -4,9 +4,27 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const mongoose = require('mongoose');
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+// Allow the Angular development server to call this local API from port 4200.
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+});
+// Connect to the local MongoDB database before the API routes use it.
+mongoose.connect('mongodb://localhost:27017/cms')
+  .then(() => {
+    console.log('Connected to database!');
+  })
+  .catch((error) => {
+    console.log('Connection failed: ' + error);
+  });
+
 
 // Middleware helps the server read incoming requests and display request information.
 app.use(logger('dev'));

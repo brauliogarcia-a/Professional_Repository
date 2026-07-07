@@ -1,3 +1,3 @@
-// Replace this value with the URL of your own Firebase Realtime Database.
-// Do not include the final slash. Example: https://your-project-default-rtdb.firebaseio.com
-export const DATABASE_URL = 'https://wdd430-a82c7-default-rtdb.firebaseio.com/';
+// This is the address of the local NodeJS server used by this application.
+// Angular sends its requests to this server, and the server saves the data in MongoDB.
+export const DATABASE_URL = 'http://localhost:3000/api';
