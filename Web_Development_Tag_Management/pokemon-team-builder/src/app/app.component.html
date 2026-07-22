@@ -1,0 +1,18 @@
+<!-- This creates the main navigation bar. -->
+<nav class="navbar navbar-inverse">
+  <!-- This container holds the main content of the page. -->
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="/pokemons">Pokemon Team Builder</a>
+    </div>
+     <!-- This list contains the main navigation options. -->
+    <ul class="nav navbar-nav">
+      <li><a routerLink="/pokemons">Pokemon List</a></li>
+      <li><a routerLink="/pokemons/new">Add Pokemon</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- router-outlet is where Angular shows the component for the current route. -->
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

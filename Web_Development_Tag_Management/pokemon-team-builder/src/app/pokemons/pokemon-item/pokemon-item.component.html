@@ -1,0 +1,26 @@
+<!-- This link opens the detail page for the selected Pokemon. -->
+<a class="list-group-item pokemon-card" [routerLink]="['/pokemons', pokemon.id]">
+  <div class="row">
+
+    <!-- This section shows the Pokemon image. -->
+    <div class="col-xs-3">
+      <img class="img-responsive" [src]="pokemon.imageUrl" [alt]="pokemon.name">
+    </div>
+
+    <!-- This section shows the main Pokemon information. -->
+    <div class="col-xs-9">
+      <h4 class="list-group-item-heading">{{ pokemon.name }}</h4>
+
+      <!-- This line shows the Pokemon types and level. -->
+      <p class="list-group-item-text">
+        <span class="label label-default type-label">{{ pokemon.type1 }}</span>
+
+        <!-- The second type only shows if the Pokemon has one. -->
+        <span class="label label-info type-label" *ngIf="pokemon.type2">{{ pokemon.type2 }}</span>
+
+        <span class="pull-right">Lv. {{ pokemon.level }}</span>
+      </p>
+    </div>
+
+  </div>
+</a>

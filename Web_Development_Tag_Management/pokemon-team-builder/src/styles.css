@@ -1,0 +1,34 @@
+/* global styles */
+body {
+  background: #f4f7fb;
+  color: #222;
+}
+
+.main-panel {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.page-title {
+  margin-top: 0;
+}
+
+.pokemon-card {
+  cursor: pointer;
+}
+
+.pokemon-card:hover {
+  background: #f7f7f7;
+}
+
+.pokemon-image {
+  max-width: 120px;
+  margin-bottom: 10px;
+}
+
+.type-label {
+  margin-right: 5px;
+}

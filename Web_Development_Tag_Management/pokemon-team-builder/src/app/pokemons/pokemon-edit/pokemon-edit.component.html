@@ -1,0 +1,58 @@
+<!-- HTML that shows the form to edit pokemon information -->
+<div class="main-panel">
+  <h3 class="page-title">{{ editMode ? 'Edit Pokemon' : 'Add Pokemon' }}</h3>
+
+  <div class="alert alert-danger" *ngIf="errorMessage">{{ errorMessage }}</div>
+
+  <form (ngSubmit)="onSubmit()" #pokemonForm="ngForm">
+    <div class="form-group">
+      <label for="id">Pokemon Number</label>
+      <input type="text" id="id" class="form-control" name="id" required [(ngModel)]="pokemon.id">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" class="form-control" name="name" required [(ngModel)]="pokemon.name">
+    </div>
+
+    <div class="form-group">
+      <label for="type1">Type 1</label>
+      <input type="text" id="type1" class="form-control" name="type1" required [(ngModel)]="pokemon.type1">
+    </div>
+
+    <div class="form-group">
+      <label for="type2">Type 2</label>
+      <input type="text" id="type2" class="form-control" name="type2" [(ngModel)]="pokemon.type2">
+    </div>
+
+    <div class="form-group">
+      <label for="level">Level</label>
+      <input type="number" id="level" class="form-control" name="level" required [(ngModel)]="pokemon.level">
+    </div>
+
+    <div class="form-group">
+      <label for="ability">Ability</label>
+      <input type="text" id="ability" class="form-control" name="ability" [(ngModel)]="pokemon.ability">
+    </div>
+
+    <div class="form-group">
+      <label for="imageUrl">Image URL</label>
+      <input type="text" id="imageUrl" class="form-control" name="imageUrl" [(ngModel)]="pokemon.imageUrl">
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea id="description" class="form-control" name="description" rows="3" [(ngModel)]="pokemon.description"></textarea>
+    </div>
+
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" name="isFavorite" [(ngModel)]="pokemon.isFavorite">
+        Favorite Pokemon
+      </label>
+    </div>
+
+    <button class="btn btn-success" type="submit" [disabled]="!pokemonForm.valid">Save</button>
+    <button class="btn btn-default" type="button" (click)="onCancel()">Cancel</button>
+  </form>
+</div>

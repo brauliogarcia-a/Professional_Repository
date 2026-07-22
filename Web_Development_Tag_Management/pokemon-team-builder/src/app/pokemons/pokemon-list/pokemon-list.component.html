@@ -1,0 +1,21 @@
+<div class="main-panel">
+  <div class="row">
+    <div class="col-xs-8">
+      <!-- This section shows the list of Pokemon. -->
+      <h3 class="page-title">Pokemon List</h3>
+    </div>
+    <!-- Display Button to Add New Pokemons -->
+    <div class="col-xs-4 text-right">
+      <a class="btn btn-primary" routerLink="/pokemons/new">New</a>
+    </div>
+  </div>
+
+  <p class="text-muted">This list comes from MongoDB through the Node server.</p>
+
+  <div class="alert alert-danger" *ngIf="errorMessage">{{ errorMessage }}</div>
+
+  <app-pokemon-item
+    *ngFor="let pokemon of pokemons"
+    [pokemon]="pokemon">
+  </app-pokemon-item>
+</div>

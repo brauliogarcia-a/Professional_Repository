@@ -1,0 +1,24 @@
+<div class="main-panel" *ngIf="pokemon">
+  <h3 class="page-title">{{ pokemon.name }}</h3>
+
+  <img class="pokemon-image" [src]="pokemon.imageUrl" [alt]="pokemon.name">
+
+  <p>
+    <span class="label label-default type-label">{{ pokemon.type1 }}</span>
+    <span class="label label-info type-label" *ngIf="pokemon.type2">{{ pokemon.type2 }}</span>
+  </p>
+
+  <p><strong>Level:</strong> {{ pokemon.level }}</p>
+  <p><strong>Ability:</strong> {{ pokemon.ability }}</p>
+  <p><strong>Description:</strong> {{ pokemon.description }}</p>
+  <p><strong>Favorite:</strong> {{ pokemon.isFavorite ? 'Yes' : 'No' }}</p>
+
+  <a class="btn btn-warning" [routerLink]="['/pokemons', pokemon.id, 'edit']">Edit</a>
+  <button class="btn btn-danger" type="button" (click)="onDelete()">Delete</button>
+</div>
+
+<div class="alert alert-danger" *ngIf="errorMessage">{{ errorMessage }}</div>
+
+<div class="main-panel" *ngIf="!pokemon && !errorMessage">
+  <p>Select a Pokemon from the list.</p>
+</div>
