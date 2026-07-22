@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5ObuW1pJg5c=",
+  "dgSpecHash": "jgNae9ghPOk=",
   "success": true,
   "projectFilePath": "E:\\Documents\\1.School\\BYUI\\22 Semester\\CSE 310\\Github\\Professional_Portfolio\\Programming_Languages_Python_JS_PHP_C#\\MvMovie\\MvMovie.csproj",
   "expectedPackageFiles": [
@@ -157,6 +157,18 @@
       "warningLevel": 1,
       "filePath": "E:\\Documents\\1.School\\BYUI\\22 Semester\\CSE 310\\Github\\Professional_Portfolio\\Programming_Languages_Python_JS_PHP_C#\\MvMovie\\MvMovie.csproj",
       "libraryId": "NuGet.Protocol",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'SQLitePCLRaw.lib.e_sqlite3' 2.1.11 has a known high severity vulnerability, https://github.com/advisories/GHSA-2m69-gcr7-jv3q",
+      "projectPath": "E:\\Documents\\1.School\\BYUI\\22 Semester\\CSE 310\\Github\\Professional_Portfolio\\Programming_Languages_Python_JS_PHP_C#\\MvMovie\\MvMovie.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\Documents\\1.School\\BYUI\\22 Semester\\CSE 310\\Github\\Professional_Portfolio\\Programming_Languages_Python_JS_PHP_C#\\MvMovie\\MvMovie.csproj",
+      "libraryId": "SQLitePCLRaw.lib.e_sqlite3",
       "targetGraphs": [
         "net10.0"
       ]
